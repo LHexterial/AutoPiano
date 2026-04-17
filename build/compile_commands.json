@@ -1,0 +1,368 @@
+[
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midifile.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midifile.dir\\src\\Options.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\src\\Options.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/src/Options.cpp",
+  "output": "third_party/midifile/CMakeFiles/midifile.dir/src/Options.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midifile.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midifile.dir\\src\\Binasc.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\src\\Binasc.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/src/Binasc.cpp",
+  "output": "third_party/midifile/CMakeFiles/midifile.dir/src/Binasc.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midifile.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midifile.dir\\src\\MidiEvent.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\src\\MidiEvent.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/src/MidiEvent.cpp",
+  "output": "third_party/midifile/CMakeFiles/midifile.dir/src/MidiEvent.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midifile.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midifile.dir\\src\\MidiEventList.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\src\\MidiEventList.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/src/MidiEventList.cpp",
+  "output": "third_party/midifile/CMakeFiles/midifile.dir/src/MidiEventList.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midifile.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midifile.dir\\src\\MidiFile.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\src\\MidiFile.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/src/MidiFile.cpp",
+  "output": "third_party/midifile/CMakeFiles/midifile.dir/src/MidiFile.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midifile.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midifile.dir\\src\\MidiMessage.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\src\\MidiMessage.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/src/MidiMessage.cpp",
+  "output": "third_party/midifile/CMakeFiles/midifile.dir/src/MidiMessage.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/80off.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\80off.dir\\tools\\80off.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\80off.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/80off.cpp",
+  "output": "third_party/midifile/CMakeFiles/80off.dir/tools/80off.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/asciimidi.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\asciimidi.dir\\tools\\asciimidi.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\asciimidi.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/asciimidi.cpp",
+  "output": "third_party/midifile/CMakeFiles/asciimidi.dir/tools/asciimidi.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/base642midi.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\base642midi.dir\\tools\\base642midi.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\base642midi.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/base642midi.cpp",
+  "output": "third_party/midifile/CMakeFiles/base642midi.dir/tools/base642midi.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/binasc.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\binasc.dir\\tools\\binasc.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\binasc.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/binasc.cpp",
+  "output": "third_party/midifile/CMakeFiles/binasc.dir/tools/binasc.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/chaninfo.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\chaninfo.dir\\tools\\chaninfo.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\chaninfo.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/chaninfo.cpp",
+  "output": "third_party/midifile/CMakeFiles/chaninfo.dir/tools/chaninfo.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/createmidifile.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\createmidifile.dir\\tools\\createmidifile.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\createmidifile.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/createmidifile.cpp",
+  "output": "third_party/midifile/CMakeFiles/createmidifile.dir/tools/createmidifile.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/createmidifile2.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\createmidifile2.dir\\tools\\createmidifile2.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\createmidifile2.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/createmidifile2.cpp",
+  "output": "third_party/midifile/CMakeFiles/createmidifile2.dir/tools/createmidifile2.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/deltatimes.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\deltatimes.dir\\tools\\deltatimes.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\deltatimes.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/deltatimes.cpp",
+  "output": "third_party/midifile/CMakeFiles/deltatimes.dir/tools/deltatimes.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/drumtab.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\drumtab.dir\\tools\\drumtab.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\drumtab.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/drumtab.cpp",
+  "output": "third_party/midifile/CMakeFiles/drumtab.dir/tools/drumtab.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/durations.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\durations.dir\\tools\\durations.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\durations.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/durations.cpp",
+  "output": "third_party/midifile/CMakeFiles/durations.dir/tools/durations.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/extractlyrics.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\extractlyrics.dir\\tools\\extractlyrics.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\extractlyrics.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/extractlyrics.cpp",
+  "output": "third_party/midifile/CMakeFiles/extractlyrics.dir/tools/extractlyrics.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/maxtick.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\maxtick.dir\\tools\\maxtick.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\maxtick.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/maxtick.cpp",
+  "output": "third_party/midifile/CMakeFiles/maxtick.dir/tools/maxtick.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/mid2hex.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\mid2hex.dir\\tools\\mid2hex.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\mid2hex.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/mid2hex.cpp",
+  "output": "third_party/midifile/CMakeFiles/mid2hex.dir/tools/mid2hex.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/mid2mat.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\mid2mat.dir\\tools\\mid2mat.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\mid2mat.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/mid2mat.cpp",
+  "output": "third_party/midifile/CMakeFiles/mid2mat.dir/tools/mid2mat.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/mid2mtb.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\mid2mtb.dir\\tools\\mid2mtb.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\mid2mtb.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/mid2mtb.cpp",
+  "output": "third_party/midifile/CMakeFiles/mid2mtb.dir/tools/mid2mtb.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/mid2svg.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\mid2svg.dir\\tools\\mid2svg.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\mid2svg.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/mid2svg.cpp",
+  "output": "third_party/midifile/CMakeFiles/mid2svg.dir/tools/mid2svg.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midi2base64.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midi2base64.dir\\tools\\midi2base64.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midi2base64.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midi2base64.cpp",
+  "output": "third_party/midifile/CMakeFiles/midi2base64.dir/tools/midi2base64.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midi2binasc.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midi2binasc.dir\\tools\\midi2binasc.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midi2binasc.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midi2binasc.cpp",
+  "output": "third_party/midifile/CMakeFiles/midi2binasc.dir/tools/midi2binasc.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midi2chords.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midi2chords.dir\\tools\\midi2chords.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midi2chords.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midi2chords.cpp",
+  "output": "third_party/midifile/CMakeFiles/midi2chords.dir/tools/midi2chords.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midi2melody.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midi2melody.dir\\tools\\midi2melody.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midi2melody.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midi2melody.cpp",
+  "output": "third_party/midifile/CMakeFiles/midi2melody.dir/tools/midi2melody.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midi2notes.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midi2notes.dir\\tools\\midi2notes.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midi2notes.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midi2notes.cpp",
+  "output": "third_party/midifile/CMakeFiles/midi2notes.dir/tools/midi2notes.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midi2skini.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midi2skini.dir\\tools\\midi2skini.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midi2skini.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midi2skini.cpp",
+  "output": "third_party/midifile/CMakeFiles/midi2skini.dir/tools/midi2skini.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midi2text.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midi2text.dir\\tools\\midi2text.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midi2text.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midi2text.cpp",
+  "output": "third_party/midifile/CMakeFiles/midi2text.dir/tools/midi2text.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midicat.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midicat.dir\\tools\\midicat.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midicat.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midicat.cpp",
+  "output": "third_party/midifile/CMakeFiles/midicat.dir/tools/midicat.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/mididiss.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\mididiss.dir\\tools\\mididiss.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\mididiss.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/mididiss.cpp",
+  "output": "third_party/midifile/CMakeFiles/mididiss.dir/tools/mididiss.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midimean.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midimean.dir\\tools\\midimean.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midimean.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midimean.cpp",
+  "output": "third_party/midifile/CMakeFiles/midimean.dir/tools/midimean.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midimixup.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midimixup.dir\\tools\\midimixup.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midimixup.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midimixup.cpp",
+  "output": "third_party/midifile/CMakeFiles/midimixup.dir/tools/midimixup.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midirange.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midirange.dir\\tools\\midirange.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midirange.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midirange.cpp",
+  "output": "third_party/midifile/CMakeFiles/midirange.dir/tools/midirange.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midireg.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midireg.dir\\tools\\midireg.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midireg.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midireg.cpp",
+  "output": "third_party/midifile/CMakeFiles/midireg.dir/tools/midireg.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/miditime.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\miditime.dir\\tools\\miditime.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\miditime.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/miditime.cpp",
+  "output": "third_party/midifile/CMakeFiles/miditime.dir/tools/miditime.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midiuniq.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midiuniq.dir\\tools\\midiuniq.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\midiuniq.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/midiuniq.cpp",
+  "output": "third_party/midifile/CMakeFiles/midiuniq.dir/tools/midiuniq.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/mts-type2.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\mts-type2.dir\\tools\\mts-type2.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\mts-type2.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/mts-type2.cpp",
+  "output": "third_party/midifile/CMakeFiles/mts-type2.dir/tools/mts-type2.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/mts-type9.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\mts-type9.dir\\tools\\mts-type9.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\mts-type9.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/mts-type9.cpp",
+  "output": "third_party/midifile/CMakeFiles/mts-type9.dir/tools/mts-type9.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/perfid.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\perfid.dir\\tools\\perfid.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\perfid.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/perfid.cpp",
+  "output": "third_party/midifile/CMakeFiles/perfid.dir/tools/perfid.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/readstatus.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\readstatus.dir\\tools\\readstatus.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\readstatus.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/readstatus.cpp",
+  "output": "third_party/midifile/CMakeFiles/readstatus.dir/tools/readstatus.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/redexpress.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\redexpress.dir\\tools\\redexpress.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\redexpress.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/redexpress.cpp",
+  "output": "third_party/midifile/CMakeFiles/redexpress.dir/tools/redexpress.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/removenote.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\removenote.dir\\tools\\removenote.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\removenote.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/removenote.cpp",
+  "output": "third_party/midifile/CMakeFiles/removenote.dir/tools/removenote.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/retick.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\retick.dir\\tools\\retick.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\retick.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/retick.cpp",
+  "output": "third_party/midifile/CMakeFiles/retick.dir/tools/retick.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/shutak.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\shutak.dir\\tools\\shutak.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\shutak.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/shutak.cpp",
+  "output": "third_party/midifile/CMakeFiles/shutak.dir/tools/shutak.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/smfdur.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\smfdur.dir\\tools\\smfdur.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\smfdur.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/smfdur.cpp",
+  "output": "third_party/midifile/CMakeFiles/smfdur.dir/tools/smfdur.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/stretch.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\stretch.dir\\tools\\stretch.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\stretch.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/stretch.cpp",
+  "output": "third_party/midifile/CMakeFiles/stretch.dir/tools/stretch.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/sysextest.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\sysextest.dir\\tools\\sysextest.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\sysextest.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/sysextest.cpp",
+  "output": "third_party/midifile/CMakeFiles/sysextest.dir/tools/sysextest.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/temper.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\temper.dir\\tools\\temper.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\temper.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/temper.cpp",
+  "output": "third_party/midifile/CMakeFiles/temper.dir/tools/temper.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/text2midi.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\text2midi.dir\\tools\\text2midi.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\text2midi.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/text2midi.cpp",
+  "output": "third_party/midifile/CMakeFiles/text2midi.dir/tools/text2midi.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/textmidi.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\textmidi.dir\\tools\\textmidi.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\textmidi.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/textmidi.cpp",
+  "output": "third_party/midifile/CMakeFiles/textmidi.dir/tools/textmidi.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/toascii.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\toascii.dir\\tools\\toascii.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\toascii.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/toascii.cpp",
+  "output": "third_party/midifile/CMakeFiles/toascii.dir/tools/toascii.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/tobin.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\tobin.dir\\tools\\tobin.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\tobin.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/tobin.cpp",
+  "output": "third_party/midifile/CMakeFiles/tobin.dir/tools/tobin.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/tobinary.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\tobinary.dir\\tools\\tobinary.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\tobinary.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/tobinary.cpp",
+  "output": "third_party/midifile/CMakeFiles/tobinary.dir/tools/tobinary.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/todec.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\todec.dir\\tools\\todec.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\todec.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/todec.cpp",
+  "output": "third_party/midifile/CMakeFiles/todec.dir/tools/todec.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/tohex.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\tohex.dir\\tools\\tohex.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\tohex.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/tohex.cpp",
+  "output": "third_party/midifile/CMakeFiles/tohex.dir/tools/tohex.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/type0.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\type0.dir\\tools\\type0.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\type0.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/type0.cpp",
+  "output": "third_party/midifile/CMakeFiles/type0.dir/tools/type0.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/vlv.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\vlv.dir\\tools\\vlv.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\tools\\vlv.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/tools/vlv.cpp",
+  "output": "third_party/midifile/CMakeFiles/vlv.dir/tools/vlv.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/core",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/CoreLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CoreLib.dir\\src\\midi_parser.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\core\\src\\midi_parser.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/core/src/midi_parser.cpp",
+  "output": "core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/core",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/CoreLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CoreLib.dir\\src\\player.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\core\\src\\player.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/core/src/player.cpp",
+  "output": "core/CMakeFiles/CoreLib.dir/src/player.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/app",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/AutoPiano_App.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AutoPiano_App.dir\\main.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\app\\main.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/app/main.cpp",
+  "output": "app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj"
+}
+]

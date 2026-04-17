@@ -1,0 +1,3 @@
+C:\cmake\cmake-4.3.1\cmake-4.3.1-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\midimean.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\midimean.dir/objects.a @CMakeFiles\midimean.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\midimean.dir/objects.a -Wl,--no-whole-archive -o C:\Users\HUSKY\Desktop\AutoPiano\bin\midimean.exe -Wl,--out-implib,C:\Users\HUSKY\Desktop\AutoPiano\lib\libmidimean.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\midimean.dir\linkLibs.rsp

@@ -1,0 +1,639 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : [],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "third_party",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-third_party-Debug-19812ecfca57917596e0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "third_party"
+				},
+				{
+					"build" : "third_party/midifile",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-third_party.midifile-Debug-27458d973ea3a6e5093f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "third_party/midifile",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54
+					]
+				},
+				{
+					"build" : "core",
+					"jsonFile" : "directory-core-Debug-1ad3911b0ac54a65c4e2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "core",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "app",
+					"jsonFile" : "directory-app-Debug-5b18a8ddaaa9e27a397b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "app",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						4
+					],
+					"name" : "AutoPiano",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "midifile",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Core",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "80off::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-80off-Debug-6b7b611feaa57f55e3b0.json",
+					"name" : "80off",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "AutoPiano_App::@5f5a17c01335469806cb",
+					"jsonFile" : "target-AutoPiano_App-Debug-11d0c01c3a4a964ad929.json",
+					"name" : "AutoPiano_App",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "CoreLib::@57760688d1f824db5d9c",
+					"jsonFile" : "target-CoreLib-Debug-f379b8fdf6d28b0f77a3.json",
+					"name" : "CoreLib",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "asciimidi::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-asciimidi-Debug-fa5bbe40d3f883f13973.json",
+					"name" : "asciimidi",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "base642midi::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-base642midi-Debug-8306c3c7ad05891bb3d1.json",
+					"name" : "base642midi",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "binasc::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-binasc-Debug-7186f7c79baf9a810b4b.json",
+					"name" : "binasc",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "chaninfo::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-chaninfo-Debug-e02e0a763287bd45e8db.json",
+					"name" : "chaninfo",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "createmidifile::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-createmidifile-Debug-d4d6839de23778aa1ad4.json",
+					"name" : "createmidifile",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "createmidifile2::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-createmidifile2-Debug-560dca6223a5d0bac6cc.json",
+					"name" : "createmidifile2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "deltatimes::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-deltatimes-Debug-a10a5c50a36b7e581fb3.json",
+					"name" : "deltatimes",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "drumtab::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-drumtab-Debug-036f4d534eb5eda6ba1f.json",
+					"name" : "drumtab",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "durations::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-durations-Debug-2c7fffb042f77c591288.json",
+					"name" : "durations",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "extractlyrics::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-extractlyrics-Debug-cd434598f821a9139ba5.json",
+					"name" : "extractlyrics",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "maxtick::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-maxtick-Debug-25be93fa950aaf96971b.json",
+					"name" : "maxtick",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mid2hex::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-mid2hex-Debug-8bb587874ce210ec1a40.json",
+					"name" : "mid2hex",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mid2mat::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-mid2mat-Debug-2903034387dc92f37690.json",
+					"name" : "mid2mat",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mid2mtb::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-mid2mtb-Debug-f8002aa3e6bada9b4ce7.json",
+					"name" : "mid2mtb",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mid2svg::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-mid2svg-Debug-4b5879b09fc92fc30e23.json",
+					"name" : "mid2svg",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midi2base64::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midi2base64-Debug-9c73b80b03385e367865.json",
+					"name" : "midi2base64",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midi2binasc::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midi2binasc-Debug-5db284072871058406ac.json",
+					"name" : "midi2binasc",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midi2chords::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midi2chords-Debug-61f3cba2d3c67686c382.json",
+					"name" : "midi2chords",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midi2melody::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midi2melody-Debug-f4c3226264e1e6d6c604.json",
+					"name" : "midi2melody",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midi2notes::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midi2notes-Debug-60af71c03708ca34eb3a.json",
+					"name" : "midi2notes",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midi2skini::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midi2skini-Debug-a42602da4557281e2294.json",
+					"name" : "midi2skini",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midi2text::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midi2text-Debug-2ad77351781073bd1ac6.json",
+					"name" : "midi2text",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midicat::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midicat-Debug-d7f934077e2fbeda57e3.json",
+					"name" : "midicat",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mididiss::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-mididiss-Debug-6c4036ce1fe58b0aa6ea.json",
+					"name" : "mididiss",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midifile::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midifile-Debug-3dd61ea47575e0ae8b87.json",
+					"name" : "midifile",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midimean::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midimean-Debug-645da7ce805556f60c08.json",
+					"name" : "midimean",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midimixup::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midimixup-Debug-cef0376f04c75df4f441.json",
+					"name" : "midimixup",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midirange::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midirange-Debug-1af11cb96547104ecb1b.json",
+					"name" : "midirange",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midireg::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midireg-Debug-1226a0f3a5f7663b0042.json",
+					"name" : "midireg",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "miditime::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-miditime-Debug-581bfcadbc3dfe4fc9ac.json",
+					"name" : "miditime",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "midiuniq::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-midiuniq-Debug-454ee33e1d388ba5b215.json",
+					"name" : "midiuniq",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mts-type2::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-mts-type2-Debug-f4924ad35762134b44f9.json",
+					"name" : "mts-type2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mts-type9::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-mts-type9-Debug-29a0b6a30389b7571f82.json",
+					"name" : "mts-type9",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "perfid::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-perfid-Debug-640eecd5acb1fbb5412b.json",
+					"name" : "perfid",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "readstatus::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-readstatus-Debug-c4cd81ef2e762eae6dc3.json",
+					"name" : "readstatus",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "redexpress::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-redexpress-Debug-f7a438541d354ba15e0c.json",
+					"name" : "redexpress",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "removenote::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-removenote-Debug-ad1660d4dbed97da01d2.json",
+					"name" : "removenote",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "retick::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-retick-Debug-400b22facd39f5e974e4.json",
+					"name" : "retick",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "shutak::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-shutak-Debug-e6c77d529cd7a5cccb2c.json",
+					"name" : "shutak",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "smfdur::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-smfdur-Debug-539e90bd6f9039e08509.json",
+					"name" : "smfdur",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "stretch::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-stretch-Debug-c4b01e60311be9e3d8e7.json",
+					"name" : "stretch",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sysextest::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-sysextest-Debug-02828fe0be706be3082e.json",
+					"name" : "sysextest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "temper::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-temper-Debug-47f079078d779cdbd92c.json",
+					"name" : "temper",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "text2midi::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-text2midi-Debug-8e991197fc49b9fa12f2.json",
+					"name" : "text2midi",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "textmidi::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-textmidi-Debug-d6952b68a7a3358b5d2f.json",
+					"name" : "textmidi",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "toascii::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-toascii-Debug-006439accb345cc81e74.json",
+					"name" : "toascii",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "tobin::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-tobin-Debug-ed1b43f1070e8996a909.json",
+					"name" : "tobin",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "tobinary::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-tobinary-Debug-1f03916f25de128000f9.json",
+					"name" : "tobinary",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "todec::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-todec-Debug-c2dc500730284b7db64e.json",
+					"name" : "todec",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "tohex::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-tohex-Debug-d0335db6fc999d88b7a8.json",
+					"name" : "tohex",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "type0::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-type0-Debug-ee543f33de97c3f72c35.json",
+					"name" : "type0",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "vlv::@4ce4faf128111e5deef5",
+					"jsonFile" : "target-vlv-Debug-424fa6aa03db8307e795.json",
+					"name" : "vlv",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/HUSKY/Desktop/AutoPiano/build",
+		"source" : "C:/Users/HUSKY/Desktop/AutoPiano"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

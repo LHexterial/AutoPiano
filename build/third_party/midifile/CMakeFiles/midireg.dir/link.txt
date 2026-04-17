@@ -1,0 +1,3 @@
+C:\cmake\cmake-4.3.1\cmake-4.3.1-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\midireg.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\midireg.dir/objects.a @CMakeFiles\midireg.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\midireg.dir/objects.a -Wl,--no-whole-archive -o C:\Users\HUSKY\Desktop\AutoPiano\bin\midireg.exe -Wl,--out-implib,C:\Users\HUSKY\Desktop\AutoPiano\lib\libmidireg.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\midireg.dir\linkLibs.rsp

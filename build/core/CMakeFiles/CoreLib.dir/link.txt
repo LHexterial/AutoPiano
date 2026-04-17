@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc C:\Users\HUSKY\Desktop\AutoPiano\lib\libCoreLib.a CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj CMakeFiles/CoreLib.dir/src/player.cpp.obj
+C:\mingw64\bin\ranlib.exe C:\Users\HUSKY\Desktop\AutoPiano\lib\libCoreLib.a

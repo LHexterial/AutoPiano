@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc C:\Users\HUSKY\Desktop\AutoPiano\lib\libmidifile.a CMakeFiles/midifile.dir/src/Options.cpp.obj CMakeFiles/midifile.dir/src/Binasc.cpp.obj CMakeFiles/midifile.dir/src/MidiEvent.cpp.obj CMakeFiles/midifile.dir/src/MidiEventList.cpp.obj CMakeFiles/midifile.dir/src/MidiFile.cpp.obj CMakeFiles/midifile.dir/src/MidiMessage.cpp.obj
+C:\mingw64\bin\ranlib.exe C:\Users\HUSKY\Desktop\AutoPiano\lib\libmidifile.a

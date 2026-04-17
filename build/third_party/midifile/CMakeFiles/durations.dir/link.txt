@@ -1,0 +1,3 @@
+C:\cmake\cmake-4.3.1\cmake-4.3.1-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\durations.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\durations.dir/objects.a @CMakeFiles\durations.dir\objects1.rsp
+C:\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\durations.dir/objects.a -Wl,--no-whole-archive -o C:\Users\HUSKY\Desktop\AutoPiano\bin\durations.exe -Wl,--out-implib,C:\Users\HUSKY\Desktop\AutoPiano\lib\libdurations.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\durations.dir\linkLibs.rsp

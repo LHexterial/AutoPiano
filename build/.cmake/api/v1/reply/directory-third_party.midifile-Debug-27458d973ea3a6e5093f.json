@@ -1,0 +1,71 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"third_party/midifile/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 208,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"C:/Users/HUSKY/Desktop/AutoPiano/lib/libmidifile.a"
+			],
+			"targetId" : "midifile::@4ce4faf128111e5deef5",
+			"targetIndex" : 27,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/midifile",
+			"paths" : 
+			[
+				"third_party/midifile/include/Binasc.h",
+				"third_party/midifile/include/MidiEvent.h",
+				"third_party/midifile/include/MidiEventList.h",
+				"third_party/midifile/include/MidiFile.h",
+				"third_party/midifile/include/MidiMessage.h",
+				"third_party/midifile/include/Options.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/midifile",
+		"source" : "third_party/midifile"
+	}
+}
