@@ -223,7 +223,7 @@ namespace GUI {
     }
     
     // 绘制 AutoPiano 专属控制台
-    void UpdateUI(float& speed, float& prep, std::string& midiPath, bool& isPlaying, float progress, bool& keepAlive)
+    void UpdateUI(float &speed, float &prep, std::string &midiPath, bool &isPlaying, float progress, bool &keepAlive, std::string& targetTitle)
     {
  //       ImGui::DockSpaceOverViewport();
         ImGui::SetNextWindowSize(ImVec2(550, 450), ImGuiCond_FirstUseEver);
@@ -232,6 +232,14 @@ namespace GUI {
         ImGui::End();
         return;
     }
+
+        if (!targetTitle.empty()) {
+            ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "[焦点锁定] 已绑定目标: %s", targetTitle.c_str());
+        } else {
+            ImGui::TextColored(ImVec4(1.0f, 0.8f, 0.0f, 1.0f), "[全局模式] 未绑定窗口，全局发送按键");
+        }
+        ImGui::Separator();
+        ImGui::Spacing();
 
         ImGui::Text("状态: %s", isPlaying ? "正在演奏中..." : "等待指令");
         ImGui::Separator();

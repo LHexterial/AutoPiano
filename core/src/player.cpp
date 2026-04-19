@@ -6,6 +6,37 @@
 #include <unordered_set>
 #include <atomic>
 
+std::string ConvertUTF8ToANSI(const std::string &utf8Str);
+
+bool IsTargetWindowActive(const std::string& keyword_utf8)
+{
+    if (keyword_utf8.empty()) return true;
+
+    HWND hwnd = GetForegroundWindow();
+    if (!hwnd) return false;
+
+    char currentTitle[256];
+    GetWindowTextA(hwnd, currentTitle, sizeof(currentTitle));
+    std::string titleStr(currentTitle);
+
+    // 核心修复：用转换后的 ANSI 字符串去匹配系统的 ANSI 标题
+    std::string keyword_ansi = ConvertUTF8ToANSI(keyword_utf8);
+
+    return (titleStr.find(keyword_ansi) != std::string::npos);
+}
+
+std::string ConvertUTF8ToANSI(const std::string& utf8Str) {
+    if (utf8Str.empty()) return "";
+    int wideSize = MultiByteToWideChar(CP_UTF8, 0, utf8Str.c_str(), -1, NULL, 0);
+    std::wstring wideStr(wideSize, 0);
+    MultiByteToWideChar(CP_UTF8, 0, utf8Str.c_str(), -1, wideStr.data(), wideSize);
+    int ansiSize = WideCharToMultiByte(CP_ACP, 0, wideStr.c_str(), -1, NULL, 0, NULL, NULL);
+    std::string ansiStr(ansiSize, 0);
+    WideCharToMultiByte(CP_ACP, 0, wideStr.c_str(), -1, ansiStr.data(), ansiSize, NULL, NULL);
+    if (!ansiStr.empty() && ansiStr.back() == '\0') ansiStr.pop_back();
+    return ansiStr;
+}
+
 struct TimePeriodGuard {
     TimePeriodGuard(UINT period) { timeBeginPeriod(period); }
     ~TimePeriodGuard() { timeEndPeriod(1); }
@@ -57,7 +88,7 @@ void play(const std::vector<Action>& actionQueue,
           double speedMultiplier, 
           double prepareTime, 
           std::atomic<bool>& isPlaying, 
-          std::atomic<float>& currentProgress)
+          std::atomic<float>& currentProgress, std::string targetTitle)
 {
     if (actionQueue.empty())
         return;
@@ -103,22 +134,28 @@ void play(const std::vector<Action>& actionQueue,
             }
         }
 
+        bool isActive = IsTargetWindowActive(targetTitle);
+
         WORD hexCode = SCAN_CODES[action.key];
-        if (action.type == "down")
+        if (isActive) 
         {
-            sendKey(hexCode, true);
-            activeKeys.insert(hexCode);
-        }
-        else
+            sendKey(hexCode, action.type == "down");
+            if (action.type == "down") activeKeys.insert(hexCode);
+            else activeKeys.erase(hexCode);
+        } else 
         {
-            sendKey(hexCode, false);
-            activeKeys.erase(hexCode);
+            // 安全保护：如果中途切走了窗口，立即松开所有已按下的键，防止游戏内卡死
+            if (!activeKeys.empty()) 
+            {
+                for (auto code : activeKeys) sendKey(code, false);
+                activeKeys.clear();
+            }
         }
     }
-
-    // 无论如何，退出前松开所有按键，防止游戏卡键
-    for (auto code : activeKeys)
+     for (auto code : activeKeys)
         sendKey(code, false);
 
     timeEndPeriod(1);
 }
+
+    // 无论如何，退出前松开所有按键，防止游戏卡键

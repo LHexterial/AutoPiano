@@ -8,4 +8,4 @@ void play(const std::vector<Action>& actionQueue,
           double speedMultiplier, 
           double prepareTime, 
           std::atomic<bool>& isPlaying, 
-          std::atomic<float>& currentProgress);
+          std::atomic<float>& currentProgress, std::string targetTitle);

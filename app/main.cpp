@@ -12,6 +12,19 @@ static std::atomic<bool> isPlaying{ false };
 static std::atomic<float> currentProgress{ 0.0f };
 static std::thread playThread;
 
+std::string LoadTargetTitleFromConfig() {
+    char result[] = {0};
+    
+    // 获取 config.ini 的绝对路径，确保双击运行也能找到
+    char exePath[MAX_PATH];
+    GetModuleFileNameA(NULL, exePath, MAX_PATH);
+    std::string iniPath = std::string(exePath).substr(0, std::string(exePath).find_last_of("\\/")) + "\\config.ini";
+
+    // 使用 Windows 原生 API 读取
+    GetPrivateProfileStringA("Settings", "TargetWindow", "第五人格", result, 256, iniPath.c_str());
+    return std::string(result);
+}
+
 // 你的 RAII 守卫：放在这里或头文件里
 struct TimePeriodGuard {
     explicit TimePeriodGuard(UINT period) { timeBeginPeriod(period); }
@@ -40,31 +53,23 @@ std::string UTF8ToANSI(const std::string& utf8Str) {
 }
 
 // 子线程包装函数
-void PlayThreadWrapper(std::string path, float speed, float prep) {
+void PlayThreadWrapper(std::string path, float speed, float prep, std::string targetTitle) {
     try {
-        TimePeriodGuard timerGuard(1); // 自动开启/关闭高精度模式
-        
-        // 1. 转换路径并解析
-        // 注意：这里建议保留 core/midi_parser.cpp 里的逻辑
+        TimePeriodGuard timerGuard(1);
         auto actions = decodeMidi(UTF8ToANSI(path), 0.0);
-        
-        if (actions.empty()) {
-            throw std::runtime_error("无法解析 MIDI 文件或文件为空。");
-        }
+        if (actions.empty()) throw std::runtime_error("解析失败");
 
-        // 2. 调用 player.cpp 里的 play 函数
-        // 你的 player.cpp 里的 play 应该已经被改造成接受 std::atomic 参数的版本了
-        play(actions, speed, prep, isPlaying, currentProgress);
+        // 🌟 传参增加 targetTitle
+        play(actions, speed, prep, isPlaying, currentProgress, targetTitle);
 
     } catch (const std::exception& e) {
-        MessageBoxA(nullptr, e.what(), "AutoPiano 错误", MB_OK | MB_ICONERROR);
+        MessageBoxA(nullptr, e.what(), "错误", MB_OK | MB_ICONERROR);
     }
-    
     isPlaying = false;
     currentProgress = 0.0f;
 }
-
 int main() {
+    std::string targetTitle = LoadTargetTitleFromConfig();
     HWND consoleWnd = GetConsoleWindow();
     if (consoleWnd) {
         ShowWindow(consoleWnd, SW_HIDE);
@@ -85,14 +90,14 @@ int main() {
         bool uiPlaying = isPlaying.load();
         float uiProgress = currentProgress.load();
 
-        GUI::UpdateUI(speed, prep, midiPath, uiPlaying, uiProgress, uiKeepAlive);
+        GUI::UpdateUI(speed, prep, midiPath, uiPlaying, uiProgress, uiKeepAlive, targetTitle);
 
         // 状态机切换逻辑
         if (uiPlaying && !isPlaying.load()) {
             // 开始播放
             isPlaying = true;
             if (playThread.joinable()) playThread.join(); // 清理旧线程
-            playThread = std::thread(PlayThreadWrapper, midiPath, speed, prep);
+            playThread = std::thread(PlayThreadWrapper, midiPath, speed, prep, targetTitle);
         } 
         else if (!uiPlaying && isPlaying.load()) {
             // 请求停止
