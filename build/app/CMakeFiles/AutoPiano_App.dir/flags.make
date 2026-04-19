@@ -11,7 +11,7 @@ CXX_FLAGS = -g -std=gnu++17
 
 RC_DEFINES = -DPROJECT_NAME=\"AutoPiano\" -DPROJECT_VERSION=\"2.0.0\"
 
-RC_INCLUDES = -I C:\Users\HUSKY\Desktop\AutoPiano\core\include
+RC_INCLUDES = -I C:\Users\HUSKY\Desktop\AutoPiano\core\include -I C:\Users\HUSKY\Desktop\AutoPiano\modules\gui\include
 
 RC_FLAGS = 
 

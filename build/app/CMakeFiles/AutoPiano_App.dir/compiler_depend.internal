@@ -6,6 +6,7 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/midi_parser.h
  C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/player.h
  C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/types.h
+ C:/Users/HUSKY/Desktop/AutoPiano/modules/gui/include/ui_manager.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ammintrin.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h
@@ -51,16 +52,20 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniintrin.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmi2intrin.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/bmiintrin.h
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/atomic
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/backward/binders.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bit
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/alloc_traits.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/allocator.h
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/atomic_base.h
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/atomic_lockfree_defines.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_ios.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_ios.tcc
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_string.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_string.tcc
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/char_traits.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/charconv.h
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/chrono.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/concept_check.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cpp_type_traits.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cxxabi_forced.h
@@ -86,6 +91,7 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/new_allocator.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ostream.tcc
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ostream_insert.h
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/parse_numbers.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/postypes.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/predefined_ops.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/ptr_traits.h
@@ -93,6 +99,7 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/refwrap.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/requires_hosted.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_abs.h
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_thread.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_algobase.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_bvector.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_construct.h
@@ -107,6 +114,8 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/streambuf_iterator.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/string_view.tcc
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stringfwd.h
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/this_thread_sleep.h
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/unique_ptr.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/uses_allocator.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/uses_allocator_args.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/utility.h
@@ -117,8 +126,10 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/clocale
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/concepts
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstddef
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdint
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdio
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cstdlib
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ctime
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cwchar
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/cwctype
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/debug/assertions.h
@@ -134,15 +145,18 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/iosfwd
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/iostream
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/istream
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/limits
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/new
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ostream
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/pstl/pstl_config.h
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/ratio
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/stdexcept
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/stdlib.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/streambuf
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/string
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/string_view
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/system_error
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/thread
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/tuple
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/type_traits
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/typeinfo
@@ -202,6 +216,7 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/smmintrin.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h
@@ -316,6 +331,7 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h
  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h
  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h
+ C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h
  C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h
  C:/mingw64/x86_64-w64-mingw32/include/reason.h
  C:/mingw64/x86_64-w64-mingw32/include/rpc.h
@@ -343,6 +359,7 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/mingw64/x86_64-w64-mingw32/include/specstrings.h
  C:/mingw64/x86_64-w64-mingw32/include/stdarg.h
  C:/mingw64/x86_64-w64-mingw32/include/stddef.h
+ C:/mingw64/x86_64-w64-mingw32/include/stdint.h
  C:/mingw64/x86_64-w64-mingw32/include/stdio.h
  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h
  C:/mingw64/x86_64-w64-mingw32/include/stralign.h
@@ -355,6 +372,7 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h
  C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h
  C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h
+ C:/mingw64/x86_64-w64-mingw32/include/time.h
  C:/mingw64/x86_64-w64-mingw32/include/timeapi.h
  C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h
  C:/mingw64/x86_64-w64-mingw32/include/tvout.h

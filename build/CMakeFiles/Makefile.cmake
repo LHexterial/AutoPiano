@@ -14,6 +14,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.3.1/CMakeRCCompiler.cmake"
   "CMakeFiles/4.3.1/CMakeSystem.cmake"
   "C:/Users/HUSKY/Desktop/AutoPiano/core/CMakeLists.txt"
+  "C:/Users/HUSKY/Desktop/AutoPiano/modules/CMakeLists.txt"
+  "C:/Users/HUSKY/Desktop/AutoPiano/modules/gui/CMakeLists.txt"
   "C:/Users/HUSKY/Desktop/AutoPiano/third_party/CMakeLists.txt"
   "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/CMakeLists.txt"
   "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/share/cmake-4.3/Modules/CMakeCInformation.cmake"
@@ -64,10 +66,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "third_party/midifile/CMakeFiles/CMakeDirectoryInformation.cmake"
   "core/CMakeFiles/CMakeDirectoryInformation.cmake"
   "app/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "modules/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "modules/gui/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "third_party/CMakeFiles/ImGuiLib.dir/DependInfo.cmake"
   "third_party/midifile/CMakeFiles/midifile.dir/DependInfo.cmake"
   "third_party/midifile/CMakeFiles/80off.dir/DependInfo.cmake"
   "third_party/midifile/CMakeFiles/asciimidi.dir/DependInfo.cmake"
@@ -123,4 +128,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "third_party/midifile/CMakeFiles/vlv.dir/DependInfo.cmake"
   "core/CMakeFiles/CoreLib.dir/DependInfo.cmake"
   "app/CMakeFiles/AutoPiano_App.dir/DependInfo.cmake"
+  "modules/gui/CMakeFiles/GuiLib.dir/DependInfo.cmake"
   )

@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc C:\Users\HUSKY\Desktop\AutoPiano\lib\libImGuiLib.a CMakeFiles/ImGuiLib.dir/imgui/core/imgui.cpp.obj CMakeFiles/ImGuiLib.dir/imgui/core/imgui_demo.cpp.obj CMakeFiles/ImGuiLib.dir/imgui/core/imgui_draw.cpp.obj CMakeFiles/ImGuiLib.dir/imgui/core/imgui_tables.cpp.obj CMakeFiles/ImGuiLib.dir/imgui/core/imgui_widgets.cpp.obj CMakeFiles/ImGuiLib.dir/imgui/backends/imgui_impl_dx11.cpp.obj CMakeFiles/ImGuiLib.dir/imgui/backends/imgui_impl_win32.cpp.obj
+C:\mingw64\bin\ranlib.exe C:\Users\HUSKY\Desktop\AutoPiano\lib\libImGuiLib.a

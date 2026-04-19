@@ -161,6 +161,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ImGuiLib
+
+# Build rule for target.
+ImGuiLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ImGuiLib
+.PHONY : ImGuiLib
+
+# fast build rule for target.
+ImGuiLib/fast:
+	$(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/build
+.PHONY : ImGuiLib/fast
+
+#=============================================================================
 # Target rules for targets named midifile
 
 # Build rule for target.
@@ -875,6 +888,19 @@ AutoPiano_App/fast:
 	$(MAKE) $(MAKESILENT) -f app\CMakeFiles\AutoPiano_App.dir\build.make app/CMakeFiles/AutoPiano_App.dir/build
 .PHONY : AutoPiano_App/fast
 
+#=============================================================================
+# Target rules for targets named GuiLib
+
+# Build rule for target.
+GuiLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 GuiLib
+.PHONY : GuiLib
+
+# fast build rule for target.
+GuiLib/fast:
+	$(MAKE) $(MAKESILENT) -f modules\gui\CMakeFiles\GuiLib.dir\build.make modules/gui/CMakeFiles/GuiLib.dir/build
+.PHONY : GuiLib/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -890,6 +916,8 @@ help:
 	@echo ... 80off
 	@echo ... AutoPiano_App
 	@echo ... CoreLib
+	@echo ... GuiLib
+	@echo ... ImGuiLib
 	@echo ... asciimidi
 	@echo ... base642midi
 	@echo ... binasc

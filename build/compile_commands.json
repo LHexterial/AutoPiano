@@ -1,5 +1,47 @@
 [
 {
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/ImGuiLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\ImGuiLib.dir\\imgui\\core\\imgui.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\imgui\\core\\imgui.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/imgui/core/imgui.cpp",
+  "output": "third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/ImGuiLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\ImGuiLib.dir\\imgui\\core\\imgui_demo.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\imgui\\core\\imgui_demo.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/imgui/core/imgui_demo.cpp",
+  "output": "third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_demo.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/ImGuiLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\ImGuiLib.dir\\imgui\\core\\imgui_draw.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\imgui\\core\\imgui_draw.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/imgui/core/imgui_draw.cpp",
+  "output": "third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_draw.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/ImGuiLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\ImGuiLib.dir\\imgui\\core\\imgui_tables.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\imgui\\core\\imgui_tables.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/imgui/core/imgui_tables.cpp",
+  "output": "third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_tables.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/ImGuiLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\ImGuiLib.dir\\imgui\\core\\imgui_widgets.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\imgui\\core\\imgui_widgets.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/imgui/core/imgui_widgets.cpp",
+  "output": "third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_widgets.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/ImGuiLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\ImGuiLib.dir\\imgui\\backends\\imgui_impl_dx11.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\imgui\\backends\\imgui_impl_dx11.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/imgui/backends/imgui_impl_dx11.cpp",
+  "output": "third_party/CMakeFiles/ImGuiLib.dir/imgui/backends/imgui_impl_dx11.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/ImGuiLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\ImGuiLib.dir\\imgui\\backends\\imgui_impl_win32.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\imgui\\backends\\imgui_impl_win32.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/imgui/backends/imgui_impl_win32.cpp",
+  "output": "third_party/CMakeFiles/ImGuiLib.dir/imgui/backends/imgui_impl_win32.cpp.obj"
+},
+{
   "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile",
   "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/midifile.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\midifile.dir\\src\\Options.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\third_party\\midifile\\src\\Options.cpp",
   "file": "C:/Users/HUSKY/Desktop/AutoPiano/third_party/midifile/src/Options.cpp",
@@ -364,5 +406,11 @@
   "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/AutoPiano_App.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\AutoPiano_App.dir\\main.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\app\\main.cpp",
   "file": "C:/Users/HUSKY/Desktop/AutoPiano/app/main.cpp",
   "output": "app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/modules/gui",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/GuiLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\GuiLib.dir\\src\\ui_manager.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\modules\\gui\\src\\ui_manager.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/modules/gui/src/ui_manager.cpp",
+  "output": "modules/gui/CMakeFiles/GuiLib.dir/src/ui_manager.cpp.obj"
 }
 ]

@@ -103,7 +103,9 @@ C:/Users/HUSKY/Desktop/AutoPiano/app/bin/AutoPiano_App.exe: app/CMakeFiles/AutoP
 C:/Users/HUSKY/Desktop/AutoPiano/app/bin/AutoPiano_App.exe: app/CMakeFiles/AutoPiano_App.dir/resource.rc.obj
 C:/Users/HUSKY/Desktop/AutoPiano/app/bin/AutoPiano_App.exe: app/CMakeFiles/AutoPiano_App.dir/build.make
 C:/Users/HUSKY/Desktop/AutoPiano/app/bin/AutoPiano_App.exe: C:/Users/HUSKY/Desktop/AutoPiano/lib/libCoreLib.a
+C:/Users/HUSKY/Desktop/AutoPiano/app/bin/AutoPiano_App.exe: C:/Users/HUSKY/Desktop/AutoPiano/lib/libGuiLib.a
 C:/Users/HUSKY/Desktop/AutoPiano/app/bin/AutoPiano_App.exe: C:/Users/HUSKY/Desktop/AutoPiano/lib/libmidifile.a
+C:/Users/HUSKY/Desktop/AutoPiano/app/bin/AutoPiano_App.exe: C:/Users/HUSKY/Desktop/AutoPiano/lib/libImGuiLib.a
 C:/Users/HUSKY/Desktop/AutoPiano/app/bin/AutoPiano_App.exe: app/CMakeFiles/AutoPiano_App.dir/linkLibs.rsp
 C:/Users/HUSKY/Desktop/AutoPiano/app/bin/AutoPiano_App.exe: app/CMakeFiles/AutoPiano_App.dir/objects1.rsp
 C:/Users/HUSKY/Desktop/AutoPiano/app/bin/AutoPiano_App.exe: app/CMakeFiles/AutoPiano_App.dir/link.txt

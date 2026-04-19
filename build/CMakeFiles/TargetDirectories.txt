@@ -4,6 +4,7 @@ C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/list_install_components.dir
 C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/install.dir
 C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/install/local.dir
 C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/install/strip.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/CMakeFiles/ImGuiLib.dir
 C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/CMakeFiles/edit_cache.dir
 C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/CMakeFiles/rebuild_cache.dir
 C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/CMakeFiles/list_install_components.dir
@@ -83,3 +84,16 @@ C:/Users/HUSKY/Desktop/AutoPiano/build/app/CMakeFiles/list_install_components.di
 C:/Users/HUSKY/Desktop/AutoPiano/build/app/CMakeFiles/install.dir
 C:/Users/HUSKY/Desktop/AutoPiano/build/app/CMakeFiles/install/local.dir
 C:/Users/HUSKY/Desktop/AutoPiano/build/app/CMakeFiles/install/strip.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/CMakeFiles/edit_cache.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/CMakeFiles/rebuild_cache.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/CMakeFiles/list_install_components.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/CMakeFiles/install.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/CMakeFiles/install/local.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/CMakeFiles/install/strip.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/gui/CMakeFiles/GuiLib.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/gui/CMakeFiles/edit_cache.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/gui/CMakeFiles/rebuild_cache.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/gui/CMakeFiles/list_install_components.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/gui/CMakeFiles/install.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/gui/CMakeFiles/install/local.dir
+C:/Users/HUSKY/Desktop/AutoPiano/build/modules/gui/CMakeFiles/install/strip.dir

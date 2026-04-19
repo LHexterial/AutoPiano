@@ -4,30 +4,32 @@
 #include <iostream>
 #include <unordered_map>
 #include <unordered_set>
+#include <atomic>
 
-typedef NTSTATUS(WINAPI *NtDelayExecution_t)(BOOLEAN Alertable, PLARGE_INTEGER DelayInterval);// 抓取windows内核函数
+struct TimePeriodGuard {
+    TimePeriodGuard(UINT period) { timeBeginPeriod(period); }
+    ~TimePeriodGuard() { timeEndPeriod(1); }
+};
 
-NtDelayExecution_t pNtDelayExecution = nullptr;
-
-void init_ntdll() {
-    if (pNtDelayExecution == nullptr)
-    {
-        HMODULE hNtDll = GetModuleHandleA("ntdll.dll");
-
-        if (hNtDll)
-        {
-            pNtDelayExecution = (NtDelayExecution_t)GetProcAddress(hNtDll, "NtDelayExecution");
+void precise_sleep(double seconds) 
+{
+    if (seconds <= 0.0) return;
+    LARGE_INTEGER freq, start, current;
+    QueryPerformanceFrequency(&freq);
+    QueryPerformanceCounter(&start);
+    
+    double targetTicks = seconds * freq.QuadPart;
+    
+    while (true) {
+        QueryPerformanceCounter(&current);
+        double elapsedTicks = static_cast<double>(current.QuadPart - start.QuadPart);
+        if (elapsedTicks >= targetTicks) break;
+        
+        double remainingSeconds = (targetTicks - elapsedTicks) / freq.QuadPart;
+        if (remainingSeconds > 0.002) {
+            Sleep(1); 
         }
     }
-}
-
-void precise_sleep(double seconds) // 封装精准休憩函数
-{
-    if (seconds <= 0 || pNtDelayExecution == nullptr)
-        return;
-    LARGE_INTEGER delay;
-    delay.QuadPart = static_cast<LONGLONG>(-seconds * 10000000.0);
-    pNtDelayExecution(FALSE, &delay);
 }
 
 // 硬件扫描码
@@ -51,50 +53,42 @@ void sendKey(WORD scanCode, bool isDown)
     SendInput(1, &input, sizeof(INPUT));
 }
 
-void show_pre_mesg(double time)
+void play(const std::vector<Action>& actionQueue, 
+          double speedMultiplier, 
+          double prepareTime, 
+          std::atomic<bool>& isPlaying, 
+          std::atomic<float>& currentProgress)
 {
-    std::cout << "脚本将于: " << time << "秒启动";
-}
-
-void play(const std::vector<Action> &actionQueue, double speedMultiplier, double prepareTime)
-{
-    init_ntdll();
-    show_pre_mesg(prepareTime);
+    if (actionQueue.empty())
+        return;
     Sleep(static_cast<DWORD>(prepareTime * 1000));
     timeBeginPeriod(1);
+    if (speedMultiplier <= 0.0) speedMultiplier = 1.0;
+    TimePeriodGuard guard(1);
     LARGE_INTEGER frequency, startTime, currentTime;
     QueryPerformanceFrequency(&frequency);
     QueryPerformanceCounter(&startTime);
     std::unordered_set<WORD> activeKeys;
+    
     double totalDuration = actionQueue.back().time;
-    int lastPercent = -1;
+    // 🌟 改造 3：保命代码，防止除以 0
+    if (totalDuration <= 0.0) totalDuration = 1.0; 
 
-    for (const auto& action : actionQueue)
+    for (size_t i = 0; i < actionQueue.size(); ++i)
     {
-        if (GetAsyncKeyState(VK_F10) & 0x8000)
+        // 🌟 核心：监听主界面发来的“停止”信号，以及 F10 物理急停
+        if (!isPlaying || (GetAsyncKeyState(VK_F10) & 0x8000))
         {
-            break;
+            isPlaying = false; 
+            break; 
         }
-        int currentPercent = static_cast<int>((action.time / totalDuration) * 100);
-        if (currentPercent != lastPercent)
-        {
-            int barWidth = 30;
-            int pos = barWidth *currentPercent / 100;
-            std::cout << "\r" << "[";
-            for (int i = 0; i < barWidth; ++i)
-            {
-                if (i < pos)
-                    std::cout << "=";
-                else if (i == pos)
-                    std::cout << ">";
-                else
-                    std::cout << " ";
-            }
-            std::cout << "] " << currentPercent << "%" << std::flush;
-            lastPercent = currentPercent;
-        }
-        double targetTime = action.time / speedMultiplier;
 
+        const auto& action = actionQueue[i];
+
+        // 🌟 核心：将进度实时汇报给 UI 界面
+        currentProgress = static_cast<float>(action.time / totalDuration);
+
+        double targetTime = action.time / speedMultiplier;
         while (true)
         {
             QueryPerformanceCounter(&currentTime);
@@ -108,8 +102,8 @@ void play(const std::vector<Action> &actionQueue, double speedMultiplier, double
                 precise_sleep(timeLeft - 0.0005);
             }
         }
-        WORD hexCode = SCAN_CODES[action.key];
 
+        WORD hexCode = SCAN_CODES[action.key];
         if (action.type == "down")
         {
             sendKey(hexCode, true);
@@ -121,9 +115,10 @@ void play(const std::vector<Action> &actionQueue, double speedMultiplier, double
             activeKeys.erase(hexCode);
         }
     }
+
+    // 无论如何，退出前松开所有按键，防止游戏卡键
     for (auto code : activeKeys)
         sendKey(code, false);
 
     timeEndPeriod(1);
 }
-

@@ -5,7 +5,9 @@
 		"C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/cmake_install.cmake",
 		"C:/Users/HUSKY/Desktop/AutoPiano/build/third_party/midifile/cmake_install.cmake",
 		"C:/Users/HUSKY/Desktop/AutoPiano/build/core/cmake_install.cmake",
-		"C:/Users/HUSKY/Desktop/AutoPiano/build/app/cmake_install.cmake"
+		"C:/Users/HUSKY/Desktop/AutoPiano/build/app/cmake_install.cmake",
+		"C:/Users/HUSKY/Desktop/AutoPiano/build/modules/cmake_install.cmake",
+		"C:/Users/HUSKY/Desktop/AutoPiano/build/modules/gui/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

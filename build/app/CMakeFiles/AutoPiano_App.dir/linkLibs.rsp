@@ -1,1 +1,1 @@
- C:/Users/HUSKY/Desktop/AutoPiano/lib/libCoreLib.a -lwinmm C:/Users/HUSKY/Desktop/AutoPiano/lib/libmidifile.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ C:/Users/HUSKY/Desktop/AutoPiano/lib/libCoreLib.a C:/Users/HUSKY/Desktop/AutoPiano/lib/libGuiLib.a -lwinmm C:/Users/HUSKY/Desktop/AutoPiano/lib/libmidifile.a C:/Users/HUSKY/Desktop/AutoPiano/lib/libImGuiLib.a -ld3d11 -ld3dcompiler -ldwmapi -lcomdlg32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

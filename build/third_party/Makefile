@@ -160,6 +160,188 @@ depend:
 	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+third_party/CMakeFiles/ImGuiLib.dir/rule:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/CMakeFiles/ImGuiLib.dir/rule
+.PHONY : third_party/CMakeFiles/ImGuiLib.dir/rule
+
+# Convenience name for target.
+ImGuiLib: third_party/CMakeFiles/ImGuiLib.dir/rule
+.PHONY : ImGuiLib
+
+# fast build rule for target.
+ImGuiLib/fast:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/build
+.PHONY : ImGuiLib/fast
+
+imgui/backends/imgui_impl_dx11.obj: imgui/backends/imgui_impl_dx11.cpp.obj
+.PHONY : imgui/backends/imgui_impl_dx11.obj
+
+# target to build an object file
+imgui/backends/imgui_impl_dx11.cpp.obj:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/backends/imgui_impl_dx11.cpp.obj
+.PHONY : imgui/backends/imgui_impl_dx11.cpp.obj
+
+imgui/backends/imgui_impl_dx11.i: imgui/backends/imgui_impl_dx11.cpp.i
+.PHONY : imgui/backends/imgui_impl_dx11.i
+
+# target to preprocess a source file
+imgui/backends/imgui_impl_dx11.cpp.i:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/backends/imgui_impl_dx11.cpp.i
+.PHONY : imgui/backends/imgui_impl_dx11.cpp.i
+
+imgui/backends/imgui_impl_dx11.s: imgui/backends/imgui_impl_dx11.cpp.s
+.PHONY : imgui/backends/imgui_impl_dx11.s
+
+# target to generate assembly for a file
+imgui/backends/imgui_impl_dx11.cpp.s:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/backends/imgui_impl_dx11.cpp.s
+.PHONY : imgui/backends/imgui_impl_dx11.cpp.s
+
+imgui/backends/imgui_impl_win32.obj: imgui/backends/imgui_impl_win32.cpp.obj
+.PHONY : imgui/backends/imgui_impl_win32.obj
+
+# target to build an object file
+imgui/backends/imgui_impl_win32.cpp.obj:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/backends/imgui_impl_win32.cpp.obj
+.PHONY : imgui/backends/imgui_impl_win32.cpp.obj
+
+imgui/backends/imgui_impl_win32.i: imgui/backends/imgui_impl_win32.cpp.i
+.PHONY : imgui/backends/imgui_impl_win32.i
+
+# target to preprocess a source file
+imgui/backends/imgui_impl_win32.cpp.i:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/backends/imgui_impl_win32.cpp.i
+.PHONY : imgui/backends/imgui_impl_win32.cpp.i
+
+imgui/backends/imgui_impl_win32.s: imgui/backends/imgui_impl_win32.cpp.s
+.PHONY : imgui/backends/imgui_impl_win32.s
+
+# target to generate assembly for a file
+imgui/backends/imgui_impl_win32.cpp.s:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/backends/imgui_impl_win32.cpp.s
+.PHONY : imgui/backends/imgui_impl_win32.cpp.s
+
+imgui/core/imgui.obj: imgui/core/imgui.cpp.obj
+.PHONY : imgui/core/imgui.obj
+
+# target to build an object file
+imgui/core/imgui.cpp.obj:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui.cpp.obj
+.PHONY : imgui/core/imgui.cpp.obj
+
+imgui/core/imgui.i: imgui/core/imgui.cpp.i
+.PHONY : imgui/core/imgui.i
+
+# target to preprocess a source file
+imgui/core/imgui.cpp.i:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui.cpp.i
+.PHONY : imgui/core/imgui.cpp.i
+
+imgui/core/imgui.s: imgui/core/imgui.cpp.s
+.PHONY : imgui/core/imgui.s
+
+# target to generate assembly for a file
+imgui/core/imgui.cpp.s:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui.cpp.s
+.PHONY : imgui/core/imgui.cpp.s
+
+imgui/core/imgui_demo.obj: imgui/core/imgui_demo.cpp.obj
+.PHONY : imgui/core/imgui_demo.obj
+
+# target to build an object file
+imgui/core/imgui_demo.cpp.obj:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_demo.cpp.obj
+.PHONY : imgui/core/imgui_demo.cpp.obj
+
+imgui/core/imgui_demo.i: imgui/core/imgui_demo.cpp.i
+.PHONY : imgui/core/imgui_demo.i
+
+# target to preprocess a source file
+imgui/core/imgui_demo.cpp.i:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_demo.cpp.i
+.PHONY : imgui/core/imgui_demo.cpp.i
+
+imgui/core/imgui_demo.s: imgui/core/imgui_demo.cpp.s
+.PHONY : imgui/core/imgui_demo.s
+
+# target to generate assembly for a file
+imgui/core/imgui_demo.cpp.s:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_demo.cpp.s
+.PHONY : imgui/core/imgui_demo.cpp.s
+
+imgui/core/imgui_draw.obj: imgui/core/imgui_draw.cpp.obj
+.PHONY : imgui/core/imgui_draw.obj
+
+# target to build an object file
+imgui/core/imgui_draw.cpp.obj:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_draw.cpp.obj
+.PHONY : imgui/core/imgui_draw.cpp.obj
+
+imgui/core/imgui_draw.i: imgui/core/imgui_draw.cpp.i
+.PHONY : imgui/core/imgui_draw.i
+
+# target to preprocess a source file
+imgui/core/imgui_draw.cpp.i:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_draw.cpp.i
+.PHONY : imgui/core/imgui_draw.cpp.i
+
+imgui/core/imgui_draw.s: imgui/core/imgui_draw.cpp.s
+.PHONY : imgui/core/imgui_draw.s
+
+# target to generate assembly for a file
+imgui/core/imgui_draw.cpp.s:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_draw.cpp.s
+.PHONY : imgui/core/imgui_draw.cpp.s
+
+imgui/core/imgui_tables.obj: imgui/core/imgui_tables.cpp.obj
+.PHONY : imgui/core/imgui_tables.obj
+
+# target to build an object file
+imgui/core/imgui_tables.cpp.obj:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_tables.cpp.obj
+.PHONY : imgui/core/imgui_tables.cpp.obj
+
+imgui/core/imgui_tables.i: imgui/core/imgui_tables.cpp.i
+.PHONY : imgui/core/imgui_tables.i
+
+# target to preprocess a source file
+imgui/core/imgui_tables.cpp.i:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_tables.cpp.i
+.PHONY : imgui/core/imgui_tables.cpp.i
+
+imgui/core/imgui_tables.s: imgui/core/imgui_tables.cpp.s
+.PHONY : imgui/core/imgui_tables.s
+
+# target to generate assembly for a file
+imgui/core/imgui_tables.cpp.s:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_tables.cpp.s
+.PHONY : imgui/core/imgui_tables.cpp.s
+
+imgui/core/imgui_widgets.obj: imgui/core/imgui_widgets.cpp.obj
+.PHONY : imgui/core/imgui_widgets.obj
+
+# target to build an object file
+imgui/core/imgui_widgets.cpp.obj:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_widgets.cpp.obj
+.PHONY : imgui/core/imgui_widgets.cpp.obj
+
+imgui/core/imgui_widgets.i: imgui/core/imgui_widgets.cpp.i
+.PHONY : imgui/core/imgui_widgets.i
+
+# target to preprocess a source file
+imgui/core/imgui_widgets.cpp.i:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_widgets.cpp.i
+.PHONY : imgui/core/imgui_widgets.cpp.i
+
+imgui/core/imgui_widgets.s: imgui/core/imgui_widgets.cpp.s
+.PHONY : imgui/core/imgui_widgets.s
+
+# target to generate assembly for a file
+imgui/core/imgui_widgets.cpp.s:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/imgui/core/imgui_widgets.cpp.s
+.PHONY : imgui/core/imgui_widgets.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -172,6 +354,28 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... ImGuiLib
+	@echo ... imgui/backends/imgui_impl_dx11.obj
+	@echo ... imgui/backends/imgui_impl_dx11.i
+	@echo ... imgui/backends/imgui_impl_dx11.s
+	@echo ... imgui/backends/imgui_impl_win32.obj
+	@echo ... imgui/backends/imgui_impl_win32.i
+	@echo ... imgui/backends/imgui_impl_win32.s
+	@echo ... imgui/core/imgui.obj
+	@echo ... imgui/core/imgui.i
+	@echo ... imgui/core/imgui.s
+	@echo ... imgui/core/imgui_demo.obj
+	@echo ... imgui/core/imgui_demo.i
+	@echo ... imgui/core/imgui_demo.s
+	@echo ... imgui/core/imgui_draw.obj
+	@echo ... imgui/core/imgui_draw.i
+	@echo ... imgui/core/imgui_draw.s
+	@echo ... imgui/core/imgui_tables.obj
+	@echo ... imgui/core/imgui_tables.i
+	@echo ... imgui/core/imgui_tables.s
+	@echo ... imgui/core/imgui_widgets.obj
+	@echo ... imgui/core/imgui_widgets.i
+	@echo ... imgui/core/imgui_widgets.s
 .PHONY : help
 
 

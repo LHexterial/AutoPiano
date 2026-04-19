@@ -65,24 +65,28 @@ CMAKE_BINARY_DIR = C:\Users\HUSKY\Desktop\AutoPiano\build
 all: third_party/all
 all: core/all
 all: app/all
+all: modules/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: third_party/codegen
 codegen: core/codegen
 codegen: app/codegen
+codegen: modules/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
 preinstall: third_party/preinstall
 preinstall: core/preinstall
 preinstall: app/preinstall
+preinstall: modules/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: third_party/clean
 clean: core/clean
 clean: app/clean
+clean: modules/clean
 .PHONY : clean
 
 #=============================================================================
@@ -124,13 +128,53 @@ core/clean: core/CMakeFiles/CoreLib.dir/clean
 .PHONY : core/clean
 
 #=============================================================================
+# Directory level rules for directory modules
+
+# Recursive "all" directory target.
+modules/all: modules/gui/all
+.PHONY : modules/all
+
+# Recursive "codegen" directory target.
+modules/codegen: modules/gui/codegen
+.PHONY : modules/codegen
+
+# Recursive "preinstall" directory target.
+modules/preinstall: modules/gui/preinstall
+.PHONY : modules/preinstall
+
+# Recursive "clean" directory target.
+modules/clean: modules/gui/clean
+.PHONY : modules/clean
+
+#=============================================================================
+# Directory level rules for directory modules/gui
+
+# Recursive "all" directory target.
+modules/gui/all: modules/gui/CMakeFiles/GuiLib.dir/all
+.PHONY : modules/gui/all
+
+# Recursive "codegen" directory target.
+modules/gui/codegen: modules/gui/CMakeFiles/GuiLib.dir/codegen
+.PHONY : modules/gui/codegen
+
+# Recursive "preinstall" directory target.
+modules/gui/preinstall:
+.PHONY : modules/gui/preinstall
+
+# Recursive "clean" directory target.
+modules/gui/clean: modules/gui/CMakeFiles/GuiLib.dir/clean
+.PHONY : modules/gui/clean
+
+#=============================================================================
 # Directory level rules for directory third_party
 
 # Recursive "all" directory target.
+third_party/all: third_party/CMakeFiles/ImGuiLib.dir/all
 third_party/all: third_party/midifile/all
 .PHONY : third_party/all
 
 # Recursive "codegen" directory target.
+third_party/codegen: third_party/CMakeFiles/ImGuiLib.dir/codegen
 third_party/codegen: third_party/midifile/codegen
 .PHONY : third_party/codegen
 
@@ -139,6 +183,7 @@ third_party/preinstall: third_party/midifile/preinstall
 .PHONY : third_party/preinstall
 
 # Recursive "clean" directory target.
+third_party/clean: third_party/CMakeFiles/ImGuiLib.dir/clean
 third_party/clean: third_party/midifile/clean
 .PHONY : third_party/clean
 
@@ -318,13 +363,45 @@ third_party/midifile/clean: third_party/midifile/CMakeFiles/vlv.dir/clean
 .PHONY : third_party/midifile/clean
 
 #=============================================================================
+# Target rules for target third_party/CMakeFiles/ImGuiLib.dir
+
+# All Build rule for target.
+third_party/CMakeFiles/ImGuiLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=8,9,10,11,12,13,14 "Built target ImGuiLib"
+.PHONY : third_party/CMakeFiles/ImGuiLib.dir/all
+
+# Build rule for subdir invocation for target.
+third_party/CMakeFiles/ImGuiLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/CMakeFiles/ImGuiLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
+.PHONY : third_party/CMakeFiles/ImGuiLib.dir/rule
+
+# Convenience name for target.
+ImGuiLib: third_party/CMakeFiles/ImGuiLib.dir/rule
+.PHONY : ImGuiLib
+
+# codegen rule for target.
+third_party/CMakeFiles/ImGuiLib.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=8,9,10,11,12,13,14 "Finished codegen for target ImGuiLib"
+.PHONY : third_party/CMakeFiles/ImGuiLib.dir/codegen
+
+# clean rule for target.
+third_party/CMakeFiles/ImGuiLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f third_party\CMakeFiles\ImGuiLib.dir\build.make third_party/CMakeFiles/ImGuiLib.dir/clean
+.PHONY : third_party/CMakeFiles/ImGuiLib.dir/clean
+
+#=============================================================================
 # Target rules for target third_party/midifile/CMakeFiles/midifile.dir
 
 # All Build rule for target.
 third_party/midifile/CMakeFiles/midifile.dir/all:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midifile.dir\build.make third_party/midifile/CMakeFiles/midifile.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midifile.dir\build.make third_party/midifile/CMakeFiles/midifile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=48,49,50,51,52,53 "Built target midifile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=52,53,54,55,56,57 "Built target midifile"
 .PHONY : third_party/midifile/CMakeFiles/midifile.dir/all
 
 # Build rule for subdir invocation for target.
@@ -341,7 +418,7 @@ midifile: third_party/midifile/CMakeFiles/midifile.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midifile.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midifile.dir\build.make third_party/midifile/CMakeFiles/midifile.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=48,49,50,51,52,53 "Finished codegen for target midifile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=52,53,54,55,56,57 "Finished codegen for target midifile"
 .PHONY : third_party/midifile/CMakeFiles/midifile.dir/codegen
 
 # clean rule for target.
@@ -388,12 +465,12 @@ third_party/midifile/CMakeFiles/80off.dir/clean:
 third_party/midifile/CMakeFiles/asciimidi.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\asciimidi.dir\build.make third_party/midifile/CMakeFiles/asciimidi.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\asciimidi.dir\build.make third_party/midifile/CMakeFiles/asciimidi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=7,8 "Built target asciimidi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=15 "Built target asciimidi"
 .PHONY : third_party/midifile/CMakeFiles/asciimidi.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/asciimidi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/asciimidi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/asciimidi.dir/rule
@@ -405,7 +482,7 @@ asciimidi: third_party/midifile/CMakeFiles/asciimidi.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/asciimidi.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\asciimidi.dir\build.make third_party/midifile/CMakeFiles/asciimidi.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=7,8 "Finished codegen for target asciimidi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=15 "Finished codegen for target asciimidi"
 .PHONY : third_party/midifile/CMakeFiles/asciimidi.dir/codegen
 
 # clean rule for target.
@@ -420,7 +497,7 @@ third_party/midifile/CMakeFiles/asciimidi.dir/clean:
 third_party/midifile/CMakeFiles/base642midi.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\base642midi.dir\build.make third_party/midifile/CMakeFiles/base642midi.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\base642midi.dir\build.make third_party/midifile/CMakeFiles/base642midi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=9,10 "Built target base642midi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=16,17 "Built target base642midi"
 .PHONY : third_party/midifile/CMakeFiles/base642midi.dir/all
 
 # Build rule for subdir invocation for target.
@@ -437,7 +514,7 @@ base642midi: third_party/midifile/CMakeFiles/base642midi.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/base642midi.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\base642midi.dir\build.make third_party/midifile/CMakeFiles/base642midi.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=9,10 "Finished codegen for target base642midi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=16,17 "Finished codegen for target base642midi"
 .PHONY : third_party/midifile/CMakeFiles/base642midi.dir/codegen
 
 # clean rule for target.
@@ -452,7 +529,7 @@ third_party/midifile/CMakeFiles/base642midi.dir/clean:
 third_party/midifile/CMakeFiles/binasc.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\binasc.dir\build.make third_party/midifile/CMakeFiles/binasc.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\binasc.dir\build.make third_party/midifile/CMakeFiles/binasc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=11 "Built target binasc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=18 "Built target binasc"
 .PHONY : third_party/midifile/CMakeFiles/binasc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -469,7 +546,7 @@ binasc: third_party/midifile/CMakeFiles/binasc.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/binasc.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\binasc.dir\build.make third_party/midifile/CMakeFiles/binasc.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=11 "Finished codegen for target binasc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=18 "Finished codegen for target binasc"
 .PHONY : third_party/midifile/CMakeFiles/binasc.dir/codegen
 
 # clean rule for target.
@@ -484,7 +561,7 @@ third_party/midifile/CMakeFiles/binasc.dir/clean:
 third_party/midifile/CMakeFiles/chaninfo.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\chaninfo.dir\build.make third_party/midifile/CMakeFiles/chaninfo.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\chaninfo.dir\build.make third_party/midifile/CMakeFiles/chaninfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=12,13 "Built target chaninfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=19,20 "Built target chaninfo"
 .PHONY : third_party/midifile/CMakeFiles/chaninfo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -501,7 +578,7 @@ chaninfo: third_party/midifile/CMakeFiles/chaninfo.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/chaninfo.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\chaninfo.dir\build.make third_party/midifile/CMakeFiles/chaninfo.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=12,13 "Finished codegen for target chaninfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=19,20 "Finished codegen for target chaninfo"
 .PHONY : third_party/midifile/CMakeFiles/chaninfo.dir/codegen
 
 # clean rule for target.
@@ -516,7 +593,7 @@ third_party/midifile/CMakeFiles/chaninfo.dir/clean:
 third_party/midifile/CMakeFiles/createmidifile.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\createmidifile.dir\build.make third_party/midifile/CMakeFiles/createmidifile.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\createmidifile.dir\build.make third_party/midifile/CMakeFiles/createmidifile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=14,15 "Built target createmidifile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=21,22 "Built target createmidifile"
 .PHONY : third_party/midifile/CMakeFiles/createmidifile.dir/all
 
 # Build rule for subdir invocation for target.
@@ -533,7 +610,7 @@ createmidifile: third_party/midifile/CMakeFiles/createmidifile.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/createmidifile.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\createmidifile.dir\build.make third_party/midifile/CMakeFiles/createmidifile.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=14,15 "Finished codegen for target createmidifile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=21,22 "Finished codegen for target createmidifile"
 .PHONY : third_party/midifile/CMakeFiles/createmidifile.dir/codegen
 
 # clean rule for target.
@@ -548,12 +625,12 @@ third_party/midifile/CMakeFiles/createmidifile.dir/clean:
 third_party/midifile/CMakeFiles/createmidifile2.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\createmidifile2.dir\build.make third_party/midifile/CMakeFiles/createmidifile2.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\createmidifile2.dir\build.make third_party/midifile/CMakeFiles/createmidifile2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=16,17 "Built target createmidifile2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=23 "Built target createmidifile2"
 .PHONY : third_party/midifile/CMakeFiles/createmidifile2.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/createmidifile2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/createmidifile2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/createmidifile2.dir/rule
@@ -565,7 +642,7 @@ createmidifile2: third_party/midifile/CMakeFiles/createmidifile2.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/createmidifile2.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\createmidifile2.dir\build.make third_party/midifile/CMakeFiles/createmidifile2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=16,17 "Finished codegen for target createmidifile2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=23 "Finished codegen for target createmidifile2"
 .PHONY : third_party/midifile/CMakeFiles/createmidifile2.dir/codegen
 
 # clean rule for target.
@@ -580,12 +657,12 @@ third_party/midifile/CMakeFiles/createmidifile2.dir/clean:
 third_party/midifile/CMakeFiles/deltatimes.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\deltatimes.dir\build.make third_party/midifile/CMakeFiles/deltatimes.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\deltatimes.dir\build.make third_party/midifile/CMakeFiles/deltatimes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=18 "Built target deltatimes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=24,25 "Built target deltatimes"
 .PHONY : third_party/midifile/CMakeFiles/deltatimes.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/deltatimes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/deltatimes.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/deltatimes.dir/rule
@@ -597,7 +674,7 @@ deltatimes: third_party/midifile/CMakeFiles/deltatimes.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/deltatimes.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\deltatimes.dir\build.make third_party/midifile/CMakeFiles/deltatimes.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=18 "Finished codegen for target deltatimes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=24,25 "Finished codegen for target deltatimes"
 .PHONY : third_party/midifile/CMakeFiles/deltatimes.dir/codegen
 
 # clean rule for target.
@@ -612,12 +689,12 @@ third_party/midifile/CMakeFiles/deltatimes.dir/clean:
 third_party/midifile/CMakeFiles/drumtab.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\drumtab.dir\build.make third_party/midifile/CMakeFiles/drumtab.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\drumtab.dir\build.make third_party/midifile/CMakeFiles/drumtab.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=19,20 "Built target drumtab"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=26 "Built target drumtab"
 .PHONY : third_party/midifile/CMakeFiles/drumtab.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/drumtab.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/drumtab.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/drumtab.dir/rule
@@ -629,7 +706,7 @@ drumtab: third_party/midifile/CMakeFiles/drumtab.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/drumtab.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\drumtab.dir\build.make third_party/midifile/CMakeFiles/drumtab.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=19,20 "Finished codegen for target drumtab"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=26 "Finished codegen for target drumtab"
 .PHONY : third_party/midifile/CMakeFiles/drumtab.dir/codegen
 
 # clean rule for target.
@@ -644,7 +721,7 @@ third_party/midifile/CMakeFiles/drumtab.dir/clean:
 third_party/midifile/CMakeFiles/durations.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\durations.dir\build.make third_party/midifile/CMakeFiles/durations.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\durations.dir\build.make third_party/midifile/CMakeFiles/durations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=21,22 "Built target durations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=27,28 "Built target durations"
 .PHONY : third_party/midifile/CMakeFiles/durations.dir/all
 
 # Build rule for subdir invocation for target.
@@ -661,7 +738,7 @@ durations: third_party/midifile/CMakeFiles/durations.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/durations.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\durations.dir\build.make third_party/midifile/CMakeFiles/durations.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=21,22 "Finished codegen for target durations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=27,28 "Finished codegen for target durations"
 .PHONY : third_party/midifile/CMakeFiles/durations.dir/codegen
 
 # clean rule for target.
@@ -676,7 +753,7 @@ third_party/midifile/CMakeFiles/durations.dir/clean:
 third_party/midifile/CMakeFiles/extractlyrics.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\extractlyrics.dir\build.make third_party/midifile/CMakeFiles/extractlyrics.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\extractlyrics.dir\build.make third_party/midifile/CMakeFiles/extractlyrics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=23 "Built target extractlyrics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=29 "Built target extractlyrics"
 .PHONY : third_party/midifile/CMakeFiles/extractlyrics.dir/all
 
 # Build rule for subdir invocation for target.
@@ -693,7 +770,7 @@ extractlyrics: third_party/midifile/CMakeFiles/extractlyrics.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/extractlyrics.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\extractlyrics.dir\build.make third_party/midifile/CMakeFiles/extractlyrics.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=23 "Finished codegen for target extractlyrics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=29 "Finished codegen for target extractlyrics"
 .PHONY : third_party/midifile/CMakeFiles/extractlyrics.dir/codegen
 
 # clean rule for target.
@@ -708,7 +785,7 @@ third_party/midifile/CMakeFiles/extractlyrics.dir/clean:
 third_party/midifile/CMakeFiles/maxtick.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\maxtick.dir\build.make third_party/midifile/CMakeFiles/maxtick.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\maxtick.dir\build.make third_party/midifile/CMakeFiles/maxtick.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=24,25 "Built target maxtick"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=30,31 "Built target maxtick"
 .PHONY : third_party/midifile/CMakeFiles/maxtick.dir/all
 
 # Build rule for subdir invocation for target.
@@ -725,7 +802,7 @@ maxtick: third_party/midifile/CMakeFiles/maxtick.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/maxtick.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\maxtick.dir\build.make third_party/midifile/CMakeFiles/maxtick.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=24,25 "Finished codegen for target maxtick"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=30,31 "Finished codegen for target maxtick"
 .PHONY : third_party/midifile/CMakeFiles/maxtick.dir/codegen
 
 # clean rule for target.
@@ -740,7 +817,7 @@ third_party/midifile/CMakeFiles/maxtick.dir/clean:
 third_party/midifile/CMakeFiles/mid2hex.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2hex.dir\build.make third_party/midifile/CMakeFiles/mid2hex.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2hex.dir\build.make third_party/midifile/CMakeFiles/mid2hex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=26,27 "Built target mid2hex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=32,33 "Built target mid2hex"
 .PHONY : third_party/midifile/CMakeFiles/mid2hex.dir/all
 
 # Build rule for subdir invocation for target.
@@ -757,7 +834,7 @@ mid2hex: third_party/midifile/CMakeFiles/mid2hex.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/mid2hex.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2hex.dir\build.make third_party/midifile/CMakeFiles/mid2hex.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=26,27 "Finished codegen for target mid2hex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=32,33 "Finished codegen for target mid2hex"
 .PHONY : third_party/midifile/CMakeFiles/mid2hex.dir/codegen
 
 # clean rule for target.
@@ -772,12 +849,12 @@ third_party/midifile/CMakeFiles/mid2hex.dir/clean:
 third_party/midifile/CMakeFiles/mid2mat.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2mat.dir\build.make third_party/midifile/CMakeFiles/mid2mat.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2mat.dir\build.make third_party/midifile/CMakeFiles/mid2mat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=28,29 "Built target mid2mat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=34 "Built target mid2mat"
 .PHONY : third_party/midifile/CMakeFiles/mid2mat.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/mid2mat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/mid2mat.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/mid2mat.dir/rule
@@ -789,7 +866,7 @@ mid2mat: third_party/midifile/CMakeFiles/mid2mat.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/mid2mat.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2mat.dir\build.make third_party/midifile/CMakeFiles/mid2mat.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=28,29 "Finished codegen for target mid2mat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=34 "Finished codegen for target mid2mat"
 .PHONY : third_party/midifile/CMakeFiles/mid2mat.dir/codegen
 
 # clean rule for target.
@@ -804,12 +881,12 @@ third_party/midifile/CMakeFiles/mid2mat.dir/clean:
 third_party/midifile/CMakeFiles/mid2mtb.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2mtb.dir\build.make third_party/midifile/CMakeFiles/mid2mtb.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2mtb.dir\build.make third_party/midifile/CMakeFiles/mid2mtb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=30 "Built target mid2mtb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=35,36 "Built target mid2mtb"
 .PHONY : third_party/midifile/CMakeFiles/mid2mtb.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/mid2mtb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/mid2mtb.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/mid2mtb.dir/rule
@@ -821,7 +898,7 @@ mid2mtb: third_party/midifile/CMakeFiles/mid2mtb.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/mid2mtb.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2mtb.dir\build.make third_party/midifile/CMakeFiles/mid2mtb.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=30 "Finished codegen for target mid2mtb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=35,36 "Finished codegen for target mid2mtb"
 .PHONY : third_party/midifile/CMakeFiles/mid2mtb.dir/codegen
 
 # clean rule for target.
@@ -836,12 +913,12 @@ third_party/midifile/CMakeFiles/mid2mtb.dir/clean:
 third_party/midifile/CMakeFiles/mid2svg.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2svg.dir\build.make third_party/midifile/CMakeFiles/mid2svg.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2svg.dir\build.make third_party/midifile/CMakeFiles/mid2svg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=31,32 "Built target mid2svg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=37 "Built target mid2svg"
 .PHONY : third_party/midifile/CMakeFiles/mid2svg.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/mid2svg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/mid2svg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/mid2svg.dir/rule
@@ -853,7 +930,7 @@ mid2svg: third_party/midifile/CMakeFiles/mid2svg.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/mid2svg.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mid2svg.dir\build.make third_party/midifile/CMakeFiles/mid2svg.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=31,32 "Finished codegen for target mid2svg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=37 "Finished codegen for target mid2svg"
 .PHONY : third_party/midifile/CMakeFiles/mid2svg.dir/codegen
 
 # clean rule for target.
@@ -868,7 +945,7 @@ third_party/midifile/CMakeFiles/mid2svg.dir/clean:
 third_party/midifile/CMakeFiles/midi2base64.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2base64.dir\build.make third_party/midifile/CMakeFiles/midi2base64.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2base64.dir\build.make third_party/midifile/CMakeFiles/midi2base64.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=33,34 "Built target midi2base64"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=38,39 "Built target midi2base64"
 .PHONY : third_party/midifile/CMakeFiles/midi2base64.dir/all
 
 # Build rule for subdir invocation for target.
@@ -885,7 +962,7 @@ midi2base64: third_party/midifile/CMakeFiles/midi2base64.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midi2base64.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2base64.dir\build.make third_party/midifile/CMakeFiles/midi2base64.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=33,34 "Finished codegen for target midi2base64"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=38,39 "Finished codegen for target midi2base64"
 .PHONY : third_party/midifile/CMakeFiles/midi2base64.dir/codegen
 
 # clean rule for target.
@@ -900,7 +977,7 @@ third_party/midifile/CMakeFiles/midi2base64.dir/clean:
 third_party/midifile/CMakeFiles/midi2binasc.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2binasc.dir\build.make third_party/midifile/CMakeFiles/midi2binasc.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2binasc.dir\build.make third_party/midifile/CMakeFiles/midi2binasc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=35 "Built target midi2binasc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=40 "Built target midi2binasc"
 .PHONY : third_party/midifile/CMakeFiles/midi2binasc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -917,7 +994,7 @@ midi2binasc: third_party/midifile/CMakeFiles/midi2binasc.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midi2binasc.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2binasc.dir\build.make third_party/midifile/CMakeFiles/midi2binasc.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=35 "Finished codegen for target midi2binasc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=40 "Finished codegen for target midi2binasc"
 .PHONY : third_party/midifile/CMakeFiles/midi2binasc.dir/codegen
 
 # clean rule for target.
@@ -932,7 +1009,7 @@ third_party/midifile/CMakeFiles/midi2binasc.dir/clean:
 third_party/midifile/CMakeFiles/midi2chords.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2chords.dir\build.make third_party/midifile/CMakeFiles/midi2chords.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2chords.dir\build.make third_party/midifile/CMakeFiles/midi2chords.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=36,37 "Built target midi2chords"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=41,42 "Built target midi2chords"
 .PHONY : third_party/midifile/CMakeFiles/midi2chords.dir/all
 
 # Build rule for subdir invocation for target.
@@ -949,7 +1026,7 @@ midi2chords: third_party/midifile/CMakeFiles/midi2chords.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midi2chords.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2chords.dir\build.make third_party/midifile/CMakeFiles/midi2chords.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=36,37 "Finished codegen for target midi2chords"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=41,42 "Finished codegen for target midi2chords"
 .PHONY : third_party/midifile/CMakeFiles/midi2chords.dir/codegen
 
 # clean rule for target.
@@ -964,7 +1041,7 @@ third_party/midifile/CMakeFiles/midi2chords.dir/clean:
 third_party/midifile/CMakeFiles/midi2melody.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2melody.dir\build.make third_party/midifile/CMakeFiles/midi2melody.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2melody.dir\build.make third_party/midifile/CMakeFiles/midi2melody.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=38,39 "Built target midi2melody"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=43,44 "Built target midi2melody"
 .PHONY : third_party/midifile/CMakeFiles/midi2melody.dir/all
 
 # Build rule for subdir invocation for target.
@@ -981,7 +1058,7 @@ midi2melody: third_party/midifile/CMakeFiles/midi2melody.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midi2melody.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2melody.dir\build.make third_party/midifile/CMakeFiles/midi2melody.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=38,39 "Finished codegen for target midi2melody"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=43,44 "Finished codegen for target midi2melody"
 .PHONY : third_party/midifile/CMakeFiles/midi2melody.dir/codegen
 
 # clean rule for target.
@@ -996,12 +1073,12 @@ third_party/midifile/CMakeFiles/midi2melody.dir/clean:
 third_party/midifile/CMakeFiles/midi2notes.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2notes.dir\build.make third_party/midifile/CMakeFiles/midi2notes.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2notes.dir\build.make third_party/midifile/CMakeFiles/midi2notes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=40,41 "Built target midi2notes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=45 "Built target midi2notes"
 .PHONY : third_party/midifile/CMakeFiles/midi2notes.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/midi2notes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/midi2notes.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/midi2notes.dir/rule
@@ -1013,7 +1090,7 @@ midi2notes: third_party/midifile/CMakeFiles/midi2notes.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midi2notes.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2notes.dir\build.make third_party/midifile/CMakeFiles/midi2notes.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=40,41 "Finished codegen for target midi2notes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=45 "Finished codegen for target midi2notes"
 .PHONY : third_party/midifile/CMakeFiles/midi2notes.dir/codegen
 
 # clean rule for target.
@@ -1028,12 +1105,12 @@ third_party/midifile/CMakeFiles/midi2notes.dir/clean:
 third_party/midifile/CMakeFiles/midi2skini.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2skini.dir\build.make third_party/midifile/CMakeFiles/midi2skini.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2skini.dir\build.make third_party/midifile/CMakeFiles/midi2skini.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=42 "Built target midi2skini"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=46,47 "Built target midi2skini"
 .PHONY : third_party/midifile/CMakeFiles/midi2skini.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/midi2skini.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/midi2skini.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/midi2skini.dir/rule
@@ -1045,7 +1122,7 @@ midi2skini: third_party/midifile/CMakeFiles/midi2skini.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midi2skini.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2skini.dir\build.make third_party/midifile/CMakeFiles/midi2skini.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=42 "Finished codegen for target midi2skini"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=46,47 "Finished codegen for target midi2skini"
 .PHONY : third_party/midifile/CMakeFiles/midi2skini.dir/codegen
 
 # clean rule for target.
@@ -1060,12 +1137,12 @@ third_party/midifile/CMakeFiles/midi2skini.dir/clean:
 third_party/midifile/CMakeFiles/midi2text.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2text.dir\build.make third_party/midifile/CMakeFiles/midi2text.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2text.dir\build.make third_party/midifile/CMakeFiles/midi2text.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=43,44 "Built target midi2text"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=48 "Built target midi2text"
 .PHONY : third_party/midifile/CMakeFiles/midi2text.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/midi2text.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/midi2text.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/midi2text.dir/rule
@@ -1077,7 +1154,7 @@ midi2text: third_party/midifile/CMakeFiles/midi2text.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midi2text.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midi2text.dir\build.make third_party/midifile/CMakeFiles/midi2text.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=43,44 "Finished codegen for target midi2text"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=48 "Finished codegen for target midi2text"
 .PHONY : third_party/midifile/CMakeFiles/midi2text.dir/codegen
 
 # clean rule for target.
@@ -1092,7 +1169,7 @@ third_party/midifile/CMakeFiles/midi2text.dir/clean:
 third_party/midifile/CMakeFiles/midicat.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midicat.dir\build.make third_party/midifile/CMakeFiles/midicat.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midicat.dir\build.make third_party/midifile/CMakeFiles/midicat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=45,46 "Built target midicat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=49,50 "Built target midicat"
 .PHONY : third_party/midifile/CMakeFiles/midicat.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1109,7 +1186,7 @@ midicat: third_party/midifile/CMakeFiles/midicat.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midicat.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midicat.dir\build.make third_party/midifile/CMakeFiles/midicat.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=45,46 "Finished codegen for target midicat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=49,50 "Finished codegen for target midicat"
 .PHONY : third_party/midifile/CMakeFiles/midicat.dir/codegen
 
 # clean rule for target.
@@ -1124,7 +1201,7 @@ third_party/midifile/CMakeFiles/midicat.dir/clean:
 third_party/midifile/CMakeFiles/mididiss.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mididiss.dir\build.make third_party/midifile/CMakeFiles/mididiss.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mididiss.dir\build.make third_party/midifile/CMakeFiles/mididiss.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=47 "Built target mididiss"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=51 "Built target mididiss"
 .PHONY : third_party/midifile/CMakeFiles/mididiss.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1141,7 +1218,7 @@ mididiss: third_party/midifile/CMakeFiles/mididiss.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/mididiss.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mididiss.dir\build.make third_party/midifile/CMakeFiles/mididiss.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=47 "Finished codegen for target mididiss"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=51 "Finished codegen for target mididiss"
 .PHONY : third_party/midifile/CMakeFiles/mididiss.dir/codegen
 
 # clean rule for target.
@@ -1156,7 +1233,7 @@ third_party/midifile/CMakeFiles/mididiss.dir/clean:
 third_party/midifile/CMakeFiles/midimean.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midimean.dir\build.make third_party/midifile/CMakeFiles/midimean.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midimean.dir\build.make third_party/midifile/CMakeFiles/midimean.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=54,55 "Built target midimean"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=58,59 "Built target midimean"
 .PHONY : third_party/midifile/CMakeFiles/midimean.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1173,7 +1250,7 @@ midimean: third_party/midifile/CMakeFiles/midimean.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midimean.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midimean.dir\build.make third_party/midifile/CMakeFiles/midimean.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=54,55 "Finished codegen for target midimean"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=58,59 "Finished codegen for target midimean"
 .PHONY : third_party/midifile/CMakeFiles/midimean.dir/codegen
 
 # clean rule for target.
@@ -1188,12 +1265,12 @@ third_party/midifile/CMakeFiles/midimean.dir/clean:
 third_party/midifile/CMakeFiles/midimixup.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midimixup.dir\build.make third_party/midifile/CMakeFiles/midimixup.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midimixup.dir\build.make third_party/midifile/CMakeFiles/midimixup.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=56,57 "Built target midimixup"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=60 "Built target midimixup"
 .PHONY : third_party/midifile/CMakeFiles/midimixup.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/midimixup.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/midimixup.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/midimixup.dir/rule
@@ -1205,7 +1282,7 @@ midimixup: third_party/midifile/CMakeFiles/midimixup.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midimixup.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midimixup.dir\build.make third_party/midifile/CMakeFiles/midimixup.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=56,57 "Finished codegen for target midimixup"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=60 "Finished codegen for target midimixup"
 .PHONY : third_party/midifile/CMakeFiles/midimixup.dir/codegen
 
 # clean rule for target.
@@ -1220,12 +1297,12 @@ third_party/midifile/CMakeFiles/midimixup.dir/clean:
 third_party/midifile/CMakeFiles/midirange.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midirange.dir\build.make third_party/midifile/CMakeFiles/midirange.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midirange.dir\build.make third_party/midifile/CMakeFiles/midirange.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=58 "Built target midirange"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=61,62 "Built target midirange"
 .PHONY : third_party/midifile/CMakeFiles/midirange.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/midirange.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/midirange.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/midirange.dir/rule
@@ -1237,7 +1314,7 @@ midirange: third_party/midifile/CMakeFiles/midirange.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midirange.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midirange.dir\build.make third_party/midifile/CMakeFiles/midirange.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=58 "Finished codegen for target midirange"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=61,62 "Finished codegen for target midirange"
 .PHONY : third_party/midifile/CMakeFiles/midirange.dir/codegen
 
 # clean rule for target.
@@ -1252,12 +1329,12 @@ third_party/midifile/CMakeFiles/midirange.dir/clean:
 third_party/midifile/CMakeFiles/midireg.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midireg.dir\build.make third_party/midifile/CMakeFiles/midireg.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midireg.dir\build.make third_party/midifile/CMakeFiles/midireg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=59,60 "Built target midireg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=63 "Built target midireg"
 .PHONY : third_party/midifile/CMakeFiles/midireg.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/midireg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/midireg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/midireg.dir/rule
@@ -1269,7 +1346,7 @@ midireg: third_party/midifile/CMakeFiles/midireg.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midireg.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midireg.dir\build.make third_party/midifile/CMakeFiles/midireg.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=59,60 "Finished codegen for target midireg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=63 "Finished codegen for target midireg"
 .PHONY : third_party/midifile/CMakeFiles/midireg.dir/codegen
 
 # clean rule for target.
@@ -1284,7 +1361,7 @@ third_party/midifile/CMakeFiles/midireg.dir/clean:
 third_party/midifile/CMakeFiles/miditime.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\miditime.dir\build.make third_party/midifile/CMakeFiles/miditime.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\miditime.dir\build.make third_party/midifile/CMakeFiles/miditime.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=61,62 "Built target miditime"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=64,65 "Built target miditime"
 .PHONY : third_party/midifile/CMakeFiles/miditime.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1301,7 +1378,7 @@ miditime: third_party/midifile/CMakeFiles/miditime.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/miditime.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\miditime.dir\build.make third_party/midifile/CMakeFiles/miditime.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=61,62 "Finished codegen for target miditime"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=64,65 "Finished codegen for target miditime"
 .PHONY : third_party/midifile/CMakeFiles/miditime.dir/codegen
 
 # clean rule for target.
@@ -1316,12 +1393,12 @@ third_party/midifile/CMakeFiles/miditime.dir/clean:
 third_party/midifile/CMakeFiles/midiuniq.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midiuniq.dir\build.make third_party/midifile/CMakeFiles/midiuniq.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midiuniq.dir\build.make third_party/midifile/CMakeFiles/midiuniq.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=63,64 "Built target midiuniq"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=66 "Built target midiuniq"
 .PHONY : third_party/midifile/CMakeFiles/midiuniq.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/midiuniq.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/midiuniq.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/midiuniq.dir/rule
@@ -1333,7 +1410,7 @@ midiuniq: third_party/midifile/CMakeFiles/midiuniq.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/midiuniq.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\midiuniq.dir\build.make third_party/midifile/CMakeFiles/midiuniq.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=63,64 "Finished codegen for target midiuniq"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=66 "Finished codegen for target midiuniq"
 .PHONY : third_party/midifile/CMakeFiles/midiuniq.dir/codegen
 
 # clean rule for target.
@@ -1348,12 +1425,12 @@ third_party/midifile/CMakeFiles/midiuniq.dir/clean:
 third_party/midifile/CMakeFiles/mts-type2.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mts-type2.dir\build.make third_party/midifile/CMakeFiles/mts-type2.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mts-type2.dir\build.make third_party/midifile/CMakeFiles/mts-type2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=65 "Built target mts-type2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=67,68 "Built target mts-type2"
 .PHONY : third_party/midifile/CMakeFiles/mts-type2.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/mts-type2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/mts-type2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/mts-type2.dir/rule
@@ -1365,7 +1442,7 @@ mts-type2: third_party/midifile/CMakeFiles/mts-type2.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/mts-type2.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mts-type2.dir\build.make third_party/midifile/CMakeFiles/mts-type2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=65 "Finished codegen for target mts-type2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=67,68 "Finished codegen for target mts-type2"
 .PHONY : third_party/midifile/CMakeFiles/mts-type2.dir/codegen
 
 # clean rule for target.
@@ -1380,7 +1457,7 @@ third_party/midifile/CMakeFiles/mts-type2.dir/clean:
 third_party/midifile/CMakeFiles/mts-type9.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mts-type9.dir\build.make third_party/midifile/CMakeFiles/mts-type9.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mts-type9.dir\build.make third_party/midifile/CMakeFiles/mts-type9.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=66,67 "Built target mts-type9"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=69,70 "Built target mts-type9"
 .PHONY : third_party/midifile/CMakeFiles/mts-type9.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1397,7 +1474,7 @@ mts-type9: third_party/midifile/CMakeFiles/mts-type9.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/mts-type9.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\mts-type9.dir\build.make third_party/midifile/CMakeFiles/mts-type9.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=66,67 "Finished codegen for target mts-type9"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=69,70 "Finished codegen for target mts-type9"
 .PHONY : third_party/midifile/CMakeFiles/mts-type9.dir/codegen
 
 # clean rule for target.
@@ -1412,12 +1489,12 @@ third_party/midifile/CMakeFiles/mts-type9.dir/clean:
 third_party/midifile/CMakeFiles/perfid.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\perfid.dir\build.make third_party/midifile/CMakeFiles/perfid.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\perfid.dir\build.make third_party/midifile/CMakeFiles/perfid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=68,69 "Built target perfid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=71 "Built target perfid"
 .PHONY : third_party/midifile/CMakeFiles/perfid.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/perfid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/perfid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/perfid.dir/rule
@@ -1429,7 +1506,7 @@ perfid: third_party/midifile/CMakeFiles/perfid.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/perfid.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\perfid.dir\build.make third_party/midifile/CMakeFiles/perfid.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=68,69 "Finished codegen for target perfid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=71 "Finished codegen for target perfid"
 .PHONY : third_party/midifile/CMakeFiles/perfid.dir/codegen
 
 # clean rule for target.
@@ -1444,12 +1521,12 @@ third_party/midifile/CMakeFiles/perfid.dir/clean:
 third_party/midifile/CMakeFiles/readstatus.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\readstatus.dir\build.make third_party/midifile/CMakeFiles/readstatus.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\readstatus.dir\build.make third_party/midifile/CMakeFiles/readstatus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=70 "Built target readstatus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=72,73 "Built target readstatus"
 .PHONY : third_party/midifile/CMakeFiles/readstatus.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/readstatus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/readstatus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/readstatus.dir/rule
@@ -1461,7 +1538,7 @@ readstatus: third_party/midifile/CMakeFiles/readstatus.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/readstatus.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\readstatus.dir\build.make third_party/midifile/CMakeFiles/readstatus.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=70 "Finished codegen for target readstatus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=72,73 "Finished codegen for target readstatus"
 .PHONY : third_party/midifile/CMakeFiles/readstatus.dir/codegen
 
 # clean rule for target.
@@ -1476,12 +1553,12 @@ third_party/midifile/CMakeFiles/readstatus.dir/clean:
 third_party/midifile/CMakeFiles/redexpress.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\redexpress.dir\build.make third_party/midifile/CMakeFiles/redexpress.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\redexpress.dir\build.make third_party/midifile/CMakeFiles/redexpress.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=71,72 "Built target redexpress"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=74 "Built target redexpress"
 .PHONY : third_party/midifile/CMakeFiles/redexpress.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/redexpress.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/redexpress.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/redexpress.dir/rule
@@ -1493,7 +1570,7 @@ redexpress: third_party/midifile/CMakeFiles/redexpress.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/redexpress.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\redexpress.dir\build.make third_party/midifile/CMakeFiles/redexpress.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=71,72 "Finished codegen for target redexpress"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=74 "Finished codegen for target redexpress"
 .PHONY : third_party/midifile/CMakeFiles/redexpress.dir/codegen
 
 # clean rule for target.
@@ -1508,7 +1585,7 @@ third_party/midifile/CMakeFiles/redexpress.dir/clean:
 third_party/midifile/CMakeFiles/removenote.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\removenote.dir\build.make third_party/midifile/CMakeFiles/removenote.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\removenote.dir\build.make third_party/midifile/CMakeFiles/removenote.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=73,74 "Built target removenote"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=75,76 "Built target removenote"
 .PHONY : third_party/midifile/CMakeFiles/removenote.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1525,7 +1602,7 @@ removenote: third_party/midifile/CMakeFiles/removenote.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/removenote.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\removenote.dir\build.make third_party/midifile/CMakeFiles/removenote.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=73,74 "Finished codegen for target removenote"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=75,76 "Finished codegen for target removenote"
 .PHONY : third_party/midifile/CMakeFiles/removenote.dir/codegen
 
 # clean rule for target.
@@ -1540,12 +1617,12 @@ third_party/midifile/CMakeFiles/removenote.dir/clean:
 third_party/midifile/CMakeFiles/retick.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\retick.dir\build.make third_party/midifile/CMakeFiles/retick.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\retick.dir\build.make third_party/midifile/CMakeFiles/retick.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=75,76 "Built target retick"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=77 "Built target retick"
 .PHONY : third_party/midifile/CMakeFiles/retick.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/retick.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/retick.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/retick.dir/rule
@@ -1557,7 +1634,7 @@ retick: third_party/midifile/CMakeFiles/retick.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/retick.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\retick.dir\build.make third_party/midifile/CMakeFiles/retick.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=75,76 "Finished codegen for target retick"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=77 "Finished codegen for target retick"
 .PHONY : third_party/midifile/CMakeFiles/retick.dir/codegen
 
 # clean rule for target.
@@ -1572,12 +1649,12 @@ third_party/midifile/CMakeFiles/retick.dir/clean:
 third_party/midifile/CMakeFiles/shutak.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\shutak.dir\build.make third_party/midifile/CMakeFiles/shutak.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\shutak.dir\build.make third_party/midifile/CMakeFiles/shutak.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=77 "Built target shutak"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=78,79 "Built target shutak"
 .PHONY : third_party/midifile/CMakeFiles/shutak.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/shutak.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/shutak.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/shutak.dir/rule
@@ -1589,7 +1666,7 @@ shutak: third_party/midifile/CMakeFiles/shutak.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/shutak.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\shutak.dir\build.make third_party/midifile/CMakeFiles/shutak.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=77 "Finished codegen for target shutak"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=78,79 "Finished codegen for target shutak"
 .PHONY : third_party/midifile/CMakeFiles/shutak.dir/codegen
 
 # clean rule for target.
@@ -1604,7 +1681,7 @@ third_party/midifile/CMakeFiles/shutak.dir/clean:
 third_party/midifile/CMakeFiles/smfdur.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\smfdur.dir\build.make third_party/midifile/CMakeFiles/smfdur.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\smfdur.dir\build.make third_party/midifile/CMakeFiles/smfdur.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=78,79 "Built target smfdur"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=80,81 "Built target smfdur"
 .PHONY : third_party/midifile/CMakeFiles/smfdur.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1621,7 +1698,7 @@ smfdur: third_party/midifile/CMakeFiles/smfdur.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/smfdur.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\smfdur.dir\build.make third_party/midifile/CMakeFiles/smfdur.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=78,79 "Finished codegen for target smfdur"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=80,81 "Finished codegen for target smfdur"
 .PHONY : third_party/midifile/CMakeFiles/smfdur.dir/codegen
 
 # clean rule for target.
@@ -1636,12 +1713,12 @@ third_party/midifile/CMakeFiles/smfdur.dir/clean:
 third_party/midifile/CMakeFiles/stretch.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\stretch.dir\build.make third_party/midifile/CMakeFiles/stretch.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\stretch.dir\build.make third_party/midifile/CMakeFiles/stretch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=80,81 "Built target stretch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=82 "Built target stretch"
 .PHONY : third_party/midifile/CMakeFiles/stretch.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/stretch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/stretch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/stretch.dir/rule
@@ -1653,7 +1730,7 @@ stretch: third_party/midifile/CMakeFiles/stretch.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/stretch.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\stretch.dir\build.make third_party/midifile/CMakeFiles/stretch.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=80,81 "Finished codegen for target stretch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=82 "Finished codegen for target stretch"
 .PHONY : third_party/midifile/CMakeFiles/stretch.dir/codegen
 
 # clean rule for target.
@@ -1668,12 +1745,12 @@ third_party/midifile/CMakeFiles/stretch.dir/clean:
 third_party/midifile/CMakeFiles/sysextest.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\sysextest.dir\build.make third_party/midifile/CMakeFiles/sysextest.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\sysextest.dir\build.make third_party/midifile/CMakeFiles/sysextest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=82 "Built target sysextest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=83,84 "Built target sysextest"
 .PHONY : third_party/midifile/CMakeFiles/sysextest.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/sysextest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/sysextest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/sysextest.dir/rule
@@ -1685,7 +1762,7 @@ sysextest: third_party/midifile/CMakeFiles/sysextest.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/sysextest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\sysextest.dir\build.make third_party/midifile/CMakeFiles/sysextest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=82 "Finished codegen for target sysextest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=83,84 "Finished codegen for target sysextest"
 .PHONY : third_party/midifile/CMakeFiles/sysextest.dir/codegen
 
 # clean rule for target.
@@ -1700,12 +1777,12 @@ third_party/midifile/CMakeFiles/sysextest.dir/clean:
 third_party/midifile/CMakeFiles/temper.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\temper.dir\build.make third_party/midifile/CMakeFiles/temper.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\temper.dir\build.make third_party/midifile/CMakeFiles/temper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=83,84 "Built target temper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=85 "Built target temper"
 .PHONY : third_party/midifile/CMakeFiles/temper.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/temper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/temper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/temper.dir/rule
@@ -1717,7 +1794,7 @@ temper: third_party/midifile/CMakeFiles/temper.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/temper.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\temper.dir\build.make third_party/midifile/CMakeFiles/temper.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=83,84 "Finished codegen for target temper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=85 "Finished codegen for target temper"
 .PHONY : third_party/midifile/CMakeFiles/temper.dir/codegen
 
 # clean rule for target.
@@ -1732,7 +1809,7 @@ third_party/midifile/CMakeFiles/temper.dir/clean:
 third_party/midifile/CMakeFiles/text2midi.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\text2midi.dir\build.make third_party/midifile/CMakeFiles/text2midi.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\text2midi.dir\build.make third_party/midifile/CMakeFiles/text2midi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=85,86 "Built target text2midi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=86,87 "Built target text2midi"
 .PHONY : third_party/midifile/CMakeFiles/text2midi.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1749,7 +1826,7 @@ text2midi: third_party/midifile/CMakeFiles/text2midi.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/text2midi.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\text2midi.dir\build.make third_party/midifile/CMakeFiles/text2midi.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=85,86 "Finished codegen for target text2midi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=86,87 "Finished codegen for target text2midi"
 .PHONY : third_party/midifile/CMakeFiles/text2midi.dir/codegen
 
 # clean rule for target.
@@ -1764,12 +1841,12 @@ third_party/midifile/CMakeFiles/text2midi.dir/clean:
 third_party/midifile/CMakeFiles/textmidi.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\textmidi.dir\build.make third_party/midifile/CMakeFiles/textmidi.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\textmidi.dir\build.make third_party/midifile/CMakeFiles/textmidi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=87,88 "Built target textmidi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=88 "Built target textmidi"
 .PHONY : third_party/midifile/CMakeFiles/textmidi.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/textmidi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/textmidi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/textmidi.dir/rule
@@ -1781,7 +1858,7 @@ textmidi: third_party/midifile/CMakeFiles/textmidi.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/textmidi.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\textmidi.dir\build.make third_party/midifile/CMakeFiles/textmidi.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=87,88 "Finished codegen for target textmidi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=88 "Finished codegen for target textmidi"
 .PHONY : third_party/midifile/CMakeFiles/textmidi.dir/codegen
 
 # clean rule for target.
@@ -1796,12 +1873,12 @@ third_party/midifile/CMakeFiles/textmidi.dir/clean:
 third_party/midifile/CMakeFiles/toascii.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\toascii.dir\build.make third_party/midifile/CMakeFiles/toascii.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\toascii.dir\build.make third_party/midifile/CMakeFiles/toascii.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=89 "Built target toascii"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=89,90 "Built target toascii"
 .PHONY : third_party/midifile/CMakeFiles/toascii.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/toascii.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/toascii.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/toascii.dir/rule
@@ -1813,7 +1890,7 @@ toascii: third_party/midifile/CMakeFiles/toascii.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/toascii.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\toascii.dir\build.make third_party/midifile/CMakeFiles/toascii.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=89 "Finished codegen for target toascii"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=89,90 "Finished codegen for target toascii"
 .PHONY : third_party/midifile/CMakeFiles/toascii.dir/codegen
 
 # clean rule for target.
@@ -1828,7 +1905,7 @@ third_party/midifile/CMakeFiles/toascii.dir/clean:
 third_party/midifile/CMakeFiles/tobin.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\tobin.dir\build.make third_party/midifile/CMakeFiles/tobin.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\tobin.dir\build.make third_party/midifile/CMakeFiles/tobin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=90,91 "Built target tobin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=91,92 "Built target tobin"
 .PHONY : third_party/midifile/CMakeFiles/tobin.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1845,7 +1922,7 @@ tobin: third_party/midifile/CMakeFiles/tobin.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/tobin.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\tobin.dir\build.make third_party/midifile/CMakeFiles/tobin.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=90,91 "Finished codegen for target tobin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=91,92 "Finished codegen for target tobin"
 .PHONY : third_party/midifile/CMakeFiles/tobin.dir/codegen
 
 # clean rule for target.
@@ -1860,12 +1937,12 @@ third_party/midifile/CMakeFiles/tobin.dir/clean:
 third_party/midifile/CMakeFiles/tobinary.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\tobinary.dir\build.make third_party/midifile/CMakeFiles/tobinary.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\tobinary.dir\build.make third_party/midifile/CMakeFiles/tobinary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=92,93 "Built target tobinary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=93 "Built target tobinary"
 .PHONY : third_party/midifile/CMakeFiles/tobinary.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/tobinary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/tobinary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/tobinary.dir/rule
@@ -1877,7 +1954,7 @@ tobinary: third_party/midifile/CMakeFiles/tobinary.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/tobinary.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\tobinary.dir\build.make third_party/midifile/CMakeFiles/tobinary.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=92,93 "Finished codegen for target tobinary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=93 "Finished codegen for target tobinary"
 .PHONY : third_party/midifile/CMakeFiles/tobinary.dir/codegen
 
 # clean rule for target.
@@ -1892,12 +1969,12 @@ third_party/midifile/CMakeFiles/tobinary.dir/clean:
 third_party/midifile/CMakeFiles/todec.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\todec.dir\build.make third_party/midifile/CMakeFiles/todec.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\todec.dir\build.make third_party/midifile/CMakeFiles/todec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=94 "Built target todec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=94,95 "Built target todec"
 .PHONY : third_party/midifile/CMakeFiles/todec.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/todec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/todec.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/todec.dir/rule
@@ -1909,7 +1986,7 @@ todec: third_party/midifile/CMakeFiles/todec.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/todec.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\todec.dir\build.make third_party/midifile/CMakeFiles/todec.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=94 "Finished codegen for target todec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=94,95 "Finished codegen for target todec"
 .PHONY : third_party/midifile/CMakeFiles/todec.dir/codegen
 
 # clean rule for target.
@@ -1924,12 +2001,12 @@ third_party/midifile/CMakeFiles/todec.dir/clean:
 third_party/midifile/CMakeFiles/tohex.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\tohex.dir\build.make third_party/midifile/CMakeFiles/tohex.dir/depend
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\tohex.dir\build.make third_party/midifile/CMakeFiles/tohex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=95,96 "Built target tohex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=96 "Built target tohex"
 .PHONY : third_party/midifile/CMakeFiles/tohex.dir/all
 
 # Build rule for subdir invocation for target.
 third_party/midifile/CMakeFiles/tohex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 third_party/midifile/CMakeFiles/tohex.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : third_party/midifile/CMakeFiles/tohex.dir/rule
@@ -1941,7 +2018,7 @@ tohex: third_party/midifile/CMakeFiles/tohex.dir/rule
 # codegen rule for target.
 third_party/midifile/CMakeFiles/tohex.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f third_party\midifile\CMakeFiles\tohex.dir\build.make third_party/midifile/CMakeFiles/tohex.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=95,96 "Finished codegen for target tohex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=96 "Finished codegen for target tohex"
 .PHONY : third_party/midifile/CMakeFiles/tohex.dir/codegen
 
 # clean rule for target.
@@ -2020,12 +2097,12 @@ third_party/midifile/CMakeFiles/vlv.dir/clean:
 core/CMakeFiles/CoreLib.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 	$(MAKE) $(MAKESILENT) -f core\CMakeFiles\CoreLib.dir\build.make core/CMakeFiles/CoreLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f core\CMakeFiles\CoreLib.dir\build.make core/CMakeFiles/CoreLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=5,6 "Built target CoreLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=4,5,6 "Built target CoreLib"
 .PHONY : core/CMakeFiles/CoreLib.dir/all
 
 # Build rule for subdir invocation for target.
 core/CMakeFiles/CoreLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 core/CMakeFiles/CoreLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : core/CMakeFiles/CoreLib.dir/rule
@@ -2037,7 +2114,7 @@ CoreLib: core/CMakeFiles/CoreLib.dir/rule
 # codegen rule for target.
 core/CMakeFiles/CoreLib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f core\CMakeFiles\CoreLib.dir\build.make core/CMakeFiles/CoreLib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=5,6 "Finished codegen for target CoreLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=4,5,6 "Finished codegen for target CoreLib"
 .PHONY : core/CMakeFiles/CoreLib.dir/codegen
 
 # clean rule for target.
@@ -2049,16 +2126,18 @@ core/CMakeFiles/CoreLib.dir/clean:
 # Target rules for target app/CMakeFiles/AutoPiano_App.dir
 
 # All Build rule for target.
+app/CMakeFiles/AutoPiano_App.dir/all: third_party/CMakeFiles/ImGuiLib.dir/all
 app/CMakeFiles/AutoPiano_App.dir/all: third_party/midifile/CMakeFiles/midifile.dir/all
 app/CMakeFiles/AutoPiano_App.dir/all: core/CMakeFiles/CoreLib.dir/all
+app/CMakeFiles/AutoPiano_App.dir/all: modules/gui/CMakeFiles/GuiLib.dir/all
 	$(MAKE) $(MAKESILENT) -f app\CMakeFiles\AutoPiano_App.dir\build.make app/CMakeFiles/AutoPiano_App.dir/depend
 	$(MAKE) $(MAKESILENT) -f app\CMakeFiles\AutoPiano_App.dir\build.make app/CMakeFiles/AutoPiano_App.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=2,3,4 "Built target AutoPiano_App"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=2,3 "Built target AutoPiano_App"
 .PHONY : app/CMakeFiles/AutoPiano_App.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/AutoPiano_App.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 app/CMakeFiles/AutoPiano_App.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
 .PHONY : app/CMakeFiles/AutoPiano_App.dir/rule
@@ -2070,13 +2149,45 @@ AutoPiano_App: app/CMakeFiles/AutoPiano_App.dir/rule
 # codegen rule for target.
 app/CMakeFiles/AutoPiano_App.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f app\CMakeFiles\AutoPiano_App.dir\build.make app/CMakeFiles/AutoPiano_App.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=2,3,4 "Finished codegen for target AutoPiano_App"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=2,3 "Finished codegen for target AutoPiano_App"
 .PHONY : app/CMakeFiles/AutoPiano_App.dir/codegen
 
 # clean rule for target.
 app/CMakeFiles/AutoPiano_App.dir/clean:
 	$(MAKE) $(MAKESILENT) -f app\CMakeFiles\AutoPiano_App.dir\build.make app/CMakeFiles/AutoPiano_App.dir/clean
 .PHONY : app/CMakeFiles/AutoPiano_App.dir/clean
+
+#=============================================================================
+# Target rules for target modules/gui/CMakeFiles/GuiLib.dir
+
+# All Build rule for target.
+modules/gui/CMakeFiles/GuiLib.dir/all: third_party/CMakeFiles/ImGuiLib.dir/all
+	$(MAKE) $(MAKESILENT) -f modules\gui\CMakeFiles\GuiLib.dir\build.make modules/gui/CMakeFiles/GuiLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f modules\gui\CMakeFiles\GuiLib.dir\build.make modules/gui/CMakeFiles/GuiLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=7 "Built target GuiLib"
+.PHONY : modules/gui/CMakeFiles/GuiLib.dir/all
+
+# Build rule for subdir invocation for target.
+modules/gui/CMakeFiles/GuiLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 modules/gui/CMakeFiles/GuiLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles 0
+.PHONY : modules/gui/CMakeFiles/GuiLib.dir/rule
+
+# Convenience name for target.
+GuiLib: modules/gui/CMakeFiles/GuiLib.dir/rule
+.PHONY : GuiLib
+
+# codegen rule for target.
+modules/gui/CMakeFiles/GuiLib.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f modules\gui\CMakeFiles\GuiLib.dir\build.make modules/gui/CMakeFiles/GuiLib.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=7 "Finished codegen for target GuiLib"
+.PHONY : modules/gui/CMakeFiles/GuiLib.dir/codegen
+
+# clean rule for target.
+modules/gui/CMakeFiles/GuiLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f modules\gui\CMakeFiles\GuiLib.dir\build.make modules/gui/CMakeFiles/GuiLib.dir/clean
+.PHONY : modules/gui/CMakeFiles/GuiLib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

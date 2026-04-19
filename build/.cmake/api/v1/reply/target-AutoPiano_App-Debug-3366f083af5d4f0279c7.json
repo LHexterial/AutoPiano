@@ -22,6 +22,7 @@
 		[
 			"app/CMakeLists.txt",
 			"core/CMakeLists.txt",
+			"modules/gui/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -38,7 +39,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 12,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
@@ -60,10 +61,19 @@
 				"file" : 2
 			},
 			{
-				"command" : 3,
+				"command" : 2,
 				"file" : 2,
-				"line" : 16,
+				"line" : 7,
 				"parent" : 6
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 16,
+				"parent" : 8
 			}
 		]
 	},
@@ -77,6 +87,10 @@
 		{
 			"backtrace" : 3,
 			"id" : "CoreLib::@57760688d1f824db5d9c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "GuiLib::@80e94ed2326635f41824"
 		}
 	],
 	"compileGroups" : 
@@ -91,11 +105,11 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"define" : "PROJECT_NAME=\"AutoPiano\""
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"define" : "PROJECT_VERSION=\"2.0.0\""
 				}
 			],
@@ -104,6 +118,10 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/HUSKY/Desktop/AutoPiano/core/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/HUSKY/Desktop/AutoPiano/modules/gui/include"
 				}
 			],
 			"language" : "CXX",
@@ -124,11 +142,11 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"define" : "PROJECT_NAME=\"AutoPiano\""
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"define" : "PROJECT_VERSION=\"2.0.0\""
 				}
 			],
@@ -137,6 +155,10 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/HUSKY/Desktop/AutoPiano/core/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/HUSKY/Desktop/AutoPiano/modules/gui/include"
 				}
 			],
 			"language" : "RC",
@@ -150,11 +172,19 @@
 	[
 		{
 			"backtrace" : 3,
+			"id" : "ImGuiLib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 3,
 			"id" : "midifile::@4ce4faf128111e5deef5"
 		},
 		{
 			"backtrace" : 3,
 			"id" : "CoreLib::@57760688d1f824db5d9c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "GuiLib::@80e94ed2326635f41824"
 		}
 	],
 	"id" : "AutoPiano_App::@5f5a17c01335469806cb",
@@ -164,6 +194,10 @@
 		[
 			{
 				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-mwindows",
 				"role" : "flags"
 			},
 			{
@@ -177,6 +211,11 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 3,
+				"fragment" : "C:\\Users\\HUSKY\\Desktop\\AutoPiano\\lib\\libGuiLib.a",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 5,
 				"fragment" : "-lwinmm",
 				"role" : "libraries"
@@ -184,6 +223,31 @@
 			{
 				"backtrace" : 5,
 				"fragment" : "C:\\Users\\HUSKY\\Desktop\\AutoPiano\\lib\\libmidifile.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "C:\\Users\\HUSKY\\Desktop\\AutoPiano\\lib\\libImGuiLib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-ld3d11",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-ld3dcompiler",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-ldwmapi",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-lcomdlg32",
 				"role" : "libraries"
 			},
 			{
@@ -198,6 +262,10 @@
 		{
 			"backtrace" : 3,
 			"id" : "CoreLib::@57760688d1f824db5d9c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "GuiLib::@80e94ed2326635f41824"
 		}
 	],
 	"name" : "AutoPiano_App",

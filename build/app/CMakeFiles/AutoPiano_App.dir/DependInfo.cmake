@@ -20,6 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_RC
 # The include file search paths:
 set(CMAKE_RC_TARGET_INCLUDE_PATH
   "C:/Users/HUSKY/Desktop/AutoPiano/core/include"
+  "C:/Users/HUSKY/Desktop/AutoPiano/modules/gui/include"
   )
 
 # The set of dependency files which are needed:

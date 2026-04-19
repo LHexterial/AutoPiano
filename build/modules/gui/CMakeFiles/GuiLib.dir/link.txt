@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc C:\Users\HUSKY\Desktop\AutoPiano\lib\libGuiLib.a CMakeFiles/GuiLib.dir/src/ui_manager.cpp.obj
+C:\mingw64\bin\ranlib.exe C:\Users\HUSKY\Desktop\AutoPiano\lib\libGuiLib.a
