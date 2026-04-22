@@ -12,7 +12,7 @@ namespace GUI {
     void NewFrame();
     
     // 绘制 AutoPiano 专属控制台
-    void UpdateUI(float& speed, float& prep, std::string& midiPath, bool& isPlaying, float progress, bool& keepAlive, std::string& targetTitle);
+    void UpdateUI(float& speed, float& prep, std::string& midiPath, bool& isPlaying, bool& isPaused, float progress, bool& keepAlive, std::string& targetTitle);
     
     // 渲染输出到屏幕
     void Render();

@@ -8,6 +8,7 @@
 #include <iostream>
 
 // 全局原子变量
+static std::atomic<bool> isPaused{false};
 static std::atomic<bool> isPlaying{ false };
 static std::atomic<float> currentProgress{ 0.0f };
 static std::thread playThread;
@@ -25,7 +26,6 @@ std::string LoadTargetTitleFromConfig() {
     return std::string(result);
 }
 
-// 你的 RAII 守卫：放在这里或头文件里
 struct TimePeriodGuard {
     explicit TimePeriodGuard(UINT period) { timeBeginPeriod(period); }
     ~TimePeriodGuard() { timeEndPeriod(1); }
@@ -59,8 +59,7 @@ void PlayThreadWrapper(std::string path, float speed, float prep, std::string ta
         auto actions = decodeMidi(UTF8ToANSI(path), 0.0);
         if (actions.empty()) throw std::runtime_error("解析失败");
 
-        // 🌟 传参增加 targetTitle
-        play(actions, speed, prep, isPlaying, currentProgress, targetTitle);
+        play(actions, speed, prep, isPlaying, isPaused,currentProgress, targetTitle);
 
     } catch (const std::exception& e) {
         MessageBoxA(nullptr, e.what(), "错误", MB_OK | MB_ICONERROR);
@@ -84,25 +83,47 @@ int main() {
     float prep = 3.0f;
     std::string midiPath = "未加载曲谱";
     bool uiKeepAlive = true;
+    bool wasF9Pressed = false;
     while (!GUI::ShouldClose() && uiKeepAlive) {
         GUI::NewFrame();
+        bool isF9Pressed = (GetAsyncKeyState(VK_F9) & 0x8000) != 0;
+        if (isPlaying.load() && isF9Pressed && !wasF9Pressed)
+        {
+            isPaused = !isPaused;
+        }
+        wasF9Pressed = isF9Pressed;
 
         bool uiPlaying = isPlaying.load();
+        bool uiPaused = isPaused.load();
         float uiProgress = currentProgress.load();
 
-        GUI::UpdateUI(speed, prep, midiPath, uiPlaying, uiProgress, uiKeepAlive, targetTitle);
+        GUI::UpdateUI(speed, prep, midiPath, uiPlaying, uiPaused,uiProgress, uiKeepAlive, targetTitle);
 
-        // 状态机切换逻辑
-        if (uiPlaying && !isPlaying.load()) {
-            // 开始播放
-            isPlaying = true;
-            if (playThread.joinable()) playThread.join(); // 清理旧线程
-            playThread = std::thread(PlayThreadWrapper, midiPath, speed, prep, targetTitle);
-        } 
-        else if (!uiPlaying && isPlaying.load()) {
-            // 请求停止
-            isPlaying = false;
+        if (uiPaused != isPaused.load())
+        {
+            isPaused.store(uiPaused);
         }
+        // 状态机切换逻辑
+        
+        if (uiPlaying != isPlaying.load())
+        {
+            isPlaying.store(uiPlaying);// 及时更新状态
+            if (uiPlaying)
+            {
+                isPaused.store(false);
+                if (playThread.joinable())
+                    playThread.join();
+                playThread = std::thread(PlayThreadWrapper, midiPath, speed, prep, targetTitle);
+            }
+            else
+            {
+                if (playThread.joinable())
+                {
+                    playThread.join();
+                }
+            }
+        }
+
 
         GUI::Render();
     }

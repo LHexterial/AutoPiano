@@ -39,3 +39,6 @@
 
 # debug information files
 *.dwo
+
+# 音乐文件
+*.mid

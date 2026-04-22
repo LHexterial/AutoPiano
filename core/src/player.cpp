@@ -19,7 +19,7 @@ bool IsTargetWindowActive(const std::string& keyword_utf8)
     GetWindowTextA(hwnd, currentTitle, sizeof(currentTitle));
     std::string titleStr(currentTitle);
 
-    // 核心修复：用转换后的 ANSI 字符串去匹配系统的 ANSI 标题
+    //用转换后的 ANSI 字符串去匹配系统的 ANSI 标题
     std::string keyword_ansi = ConvertUTF8ToANSI(keyword_utf8);
 
     return (titleStr.find(keyword_ansi) != std::string::npos);
@@ -88,11 +88,22 @@ void play(const std::vector<Action>& actionQueue,
           double speedMultiplier, 
           double prepareTime, 
           std::atomic<bool>& isPlaying, 
+          std::atomic<bool>& isPaused,
           std::atomic<float>& currentProgress, std::string targetTitle)
 {
     if (actionQueue.empty())
         return;
-    Sleep(static_cast<DWORD>(prepareTime * 1000));
+    int totalSleepMs = static_cast<int>(prepareTime * 1000);
+    int sleptMs = 0;
+    while (sleptMs < totalSleepMs) {
+        // 在准备倒计时期间，如果玩家按了停止，瞬间退出线程！
+        if (!isPlaying.load() || (GetAsyncKeyState(VK_F10) & 0x8000)) {
+            isPlaying = false;
+            return; 
+        }
+        Sleep(10); // 每次只睡 10 毫秒
+        sleptMs += 10;
+    }
     timeBeginPeriod(1);
     if (speedMultiplier <= 0.0) speedMultiplier = 1.0;
     TimePeriodGuard guard(1);
@@ -102,13 +113,13 @@ void play(const std::vector<Action>& actionQueue,
     std::unordered_set<WORD> activeKeys;
     
     double totalDuration = actionQueue.back().time;
-    // 🌟 改造 3：保命代码，防止除以 0
-    if (totalDuration <= 0.0) totalDuration = 1.0; 
-
+    
+    if (totalDuration <= 0.0) totalDuration = 1.0;
     for (size_t i = 0; i < actionQueue.size(); ++i)
     {
-        // 🌟 核心：监听主界面发来的“停止”信号，以及 F10 物理急停
-        if (!isPlaying || (GetAsyncKeyState(VK_F10) & 0x8000))
+        bool isF10Pressed = GetAsyncKeyState(VK_F10) & 0x8000;
+
+        if (!isPlaying || isF10Pressed)
         {
             isPlaying = false; 
             break; 
@@ -116,12 +127,37 @@ void play(const std::vector<Action>& actionQueue,
 
         const auto& action = actionQueue[i];
 
-        // 🌟 核心：将进度实时汇报给 UI 界面
+        
         currentProgress = static_cast<float>(action.time / totalDuration);
 
         double targetTime = action.time / speedMultiplier;
         while (true)
         {
+            if (!isPlaying.load())
+            {
+                break;
+            }
+            // 这里是自旋区，为了子线程快速反应前端传入的isPaused变量
+            if (isPaused.load())
+            {
+                if (!activeKeys.empty())// 收到暂停指令之后清除按键缓存防止游戏内按键停滞
+                {
+                    for (auto code : activeKeys)
+                    {
+                        sendKey(code, false);
+                    }
+                    activeKeys.clear();
+                }
+                LARGE_INTEGER pauseStart, pauseEnd;
+                QueryPerformanceCounter(&pauseStart);
+                while (isPaused.load() && isPlaying.load())
+                {
+                    Sleep(10);
+                }
+                QueryPerformanceCounter(&pauseEnd);
+                startTime.QuadPart += (pauseEnd.QuadPart - pauseStart.QuadPart);// 修正因为暂停而导致的按键开始时间的偏移
+            }
+
             QueryPerformanceCounter(&currentTime);
             double elapsed = static_cast<double>(currentTime.QuadPart - startTime.QuadPart) / frequency.QuadPart;
             double timeLeft = targetTime - elapsed;
@@ -129,9 +165,15 @@ void play(const std::vector<Action>& actionQueue,
             {
                 break;
             }
+            else if (timeLeft > 0.015)
+                Sleep(1);
             else if (timeLeft > 0.001){
                 precise_sleep(timeLeft - 0.0005);
             }
+        }
+        if (!isPlaying.load())
+        {
+            break;
         }
 
         bool isActive = IsTargetWindowActive(targetTitle);
@@ -144,7 +186,7 @@ void play(const std::vector<Action>& actionQueue,
             else activeKeys.erase(hexCode);
         } else 
         {
-            // 安全保护：如果中途切走了窗口，立即松开所有已按下的键，防止游戏内卡死
+            // 如果中途切走了窗口，立即松开所有已按下的键，防止游戏内卡死
             if (!activeKeys.empty()) 
             {
                 for (auto code : activeKeys) sendKey(code, false);

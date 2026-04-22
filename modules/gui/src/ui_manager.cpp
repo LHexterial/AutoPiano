@@ -223,7 +223,7 @@ namespace GUI {
     }
     
     // 绘制 AutoPiano 专属控制台
-    void UpdateUI(float &speed, float &prep, std::string &midiPath, bool &isPlaying, float progress, bool &keepAlive, std::string& targetTitle)
+    void UpdateUI(float &speed, float &prep, std::string &midiPath, bool &isPlaying, bool& isPaused, float progress, bool &keepAlive, std::string& targetTitle)
     {
  //       ImGui::DockSpaceOverViewport();
         ImGui::SetNextWindowSize(ImVec2(550, 450), ImGuiCond_FirstUseEver);
@@ -256,13 +256,40 @@ namespace GUI {
 
         ImGui::Spacing();
         if (isPlaying) {
+            if (isPaused)
+            {
+                ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.7f, 0.2f, 1.0f)); // 绿色
+                if (ImGui::Button("继续演奏(F9)",ImVec2(ImGui::GetContentRegionAvail().x / 2 - 5, 50)))
+                {
+                    isPaused = false;
+                }
+            }
+            else
+            {
+                ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.9f, 0.5f, 0.1f, 1.0f)); // 橙色
+                if (ImGui::Button("暂停演奏 (F9)", ImVec2(ImGui::GetContentRegionAvail().x / 2 - 5, 50)))
+                {
+                    isPaused = true;
+                }
+            }
+            ImGui::PopStyleColor();
+            ImGui::SameLine();
+
             ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.8f, 0.2f, 0.2f, 1.0f));
-            if (ImGui::Button("停止播放 (F10)", ImVec2(-1, 40))) isPlaying = false;
+            if (ImGui::Button("停止播放 (F10)", ImVec2(-1, 50)))
+            {
+                isPlaying = false;
+                isPaused = false;
+            }
             ImGui::PopStyleColor();
         } else {
             ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.7f, 0.2f, 1.0f));
-            if (ImGui::Button("开始演奏(start)", ImVec2(-1, 40))) {
-                if (!midiPath.empty() && midiPath != "未加载曲谱") isPlaying = true;
+            if (ImGui::Button("开始演奏(start)", ImVec2(-1, 50))) {
+                if (!midiPath.empty() && midiPath != "未加载曲谱")
+                {
+                    isPlaying = true;
+                    isPaused = false;
+                }
             }
             ImGui::PopStyleColor();
         }
