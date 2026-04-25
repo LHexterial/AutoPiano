@@ -12,5 +12,5 @@ STATIC
 ${CORE_SRC_PATH}
 )
 
-target_include_directories(CoreLib PUBLIC include)
+target_include_directories(CoreLib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(CoreLib PRIVATE winmm midifile)

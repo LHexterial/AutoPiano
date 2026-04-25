@@ -119,9 +119,9 @@ void play(const std::vector<Action>& actionQueue,
     {
         bool isF10Pressed = GetAsyncKeyState(VK_F10) & 0x8000;
 
-        if (!isPlaying || isF10Pressed)
+        if (!isPlaying.load() || isF10Pressed)
         {
-            isPlaying = false; 
+            isPlaying.store(false);
             break; 
         }
 

@@ -46,8 +46,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -84,8 +84,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -140,8 +140,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -208,8 +208,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -242,8 +242,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -288,8 +288,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -322,8 +322,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -368,8 +368,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -402,8 +402,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -448,8 +448,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -482,8 +482,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -528,8 +528,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -562,8 +562,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -608,8 +608,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -642,8 +642,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -688,8 +688,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -722,8 +722,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -768,8 +768,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -802,8 +802,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -848,8 +848,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -882,8 +882,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -928,8 +928,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -962,8 +962,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -1008,8 +1008,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -1073,12 +1073,12 @@ events:
       - "C:/Program Files/nodejs/tapi.com"
       - "C:/Program Files/nodejs/tapi.exe"
       - "C:/Program Files/nodejs/tapi"
-      - "C:/Program Files/Git/cmd/tapi.com"
-      - "C:/Program Files/Git/cmd/tapi.exe"
-      - "C:/Program Files/Git/cmd/tapi"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/tapi.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/tapi.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/tapi"
+      - "D:/Git/cmd/tapi.com"
+      - "D:/Git/cmd/tapi.exe"
+      - "D:/Git/cmd/tapi"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/tapi.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/tapi.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/tapi"
@@ -1119,8 +1119,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -1168,8 +1168,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -1233,12 +1233,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ar-14.2.com"
       - "C:/Program Files/nodejs/gcc-ar-14.2.exe"
       - "C:/Program Files/nodejs/gcc-ar-14.2"
-      - "C:/Program Files/Git/cmd/gcc-ar-14.2.com"
-      - "C:/Program Files/Git/cmd/gcc-ar-14.2.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar-14.2"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14.2.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14.2.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14.2"
+      - "D:/Git/cmd/gcc-ar-14.2.com"
+      - "D:/Git/cmd/gcc-ar-14.2.exe"
+      - "D:/Git/cmd/gcc-ar-14.2"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14.2.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14.2.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14.2"
@@ -1311,12 +1311,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ar-14.com"
       - "C:/Program Files/nodejs/gcc-ar-14.exe"
       - "C:/Program Files/nodejs/gcc-ar-14"
-      - "C:/Program Files/Git/cmd/gcc-ar-14.com"
-      - "C:/Program Files/Git/cmd/gcc-ar-14.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar-14"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14"
+      - "D:/Git/cmd/gcc-ar-14.com"
+      - "D:/Git/cmd/gcc-ar-14.exe"
+      - "D:/Git/cmd/gcc-ar-14"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14"
@@ -1389,12 +1389,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ar14.com"
       - "C:/Program Files/nodejs/gcc-ar14.exe"
       - "C:/Program Files/nodejs/gcc-ar14"
-      - "C:/Program Files/Git/cmd/gcc-ar14.com"
-      - "C:/Program Files/Git/cmd/gcc-ar14.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar14"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar14.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar14.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar14"
+      - "D:/Git/cmd/gcc-ar14.com"
+      - "D:/Git/cmd/gcc-ar14.exe"
+      - "D:/Git/cmd/gcc-ar14"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar14.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar14.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar14"
@@ -1436,8 +1436,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -1485,8 +1485,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -1550,12 +1550,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ranlib-14.2.com"
       - "C:/Program Files/nodejs/gcc-ranlib-14.2.exe"
       - "C:/Program Files/nodejs/gcc-ranlib-14.2"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14.2.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14.2.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14.2"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14.2.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14.2.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14.2"
+      - "D:/Git/cmd/gcc-ranlib-14.2.com"
+      - "D:/Git/cmd/gcc-ranlib-14.2.exe"
+      - "D:/Git/cmd/gcc-ranlib-14.2"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14.2.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14.2.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14.2"
@@ -1628,12 +1628,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ranlib-14.com"
       - "C:/Program Files/nodejs/gcc-ranlib-14.exe"
       - "C:/Program Files/nodejs/gcc-ranlib-14"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14"
+      - "D:/Git/cmd/gcc-ranlib-14.com"
+      - "D:/Git/cmd/gcc-ranlib-14.exe"
+      - "D:/Git/cmd/gcc-ranlib-14"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14"
@@ -1706,12 +1706,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ranlib14.com"
       - "C:/Program Files/nodejs/gcc-ranlib14.exe"
       - "C:/Program Files/nodejs/gcc-ranlib14"
-      - "C:/Program Files/Git/cmd/gcc-ranlib14.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib14.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib14"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib14.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib14.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib14"
+      - "D:/Git/cmd/gcc-ranlib14.com"
+      - "D:/Git/cmd/gcc-ranlib14.exe"
+      - "D:/Git/cmd/gcc-ranlib14"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib14.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib14.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib14"
@@ -1753,8 +1753,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -1802,8 +1802,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -1851,8 +1851,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -1874,8 +1874,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uxjbqr"
-      binary: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uxjbqr"
+      source: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-jk5h2s"
+      binary: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-jk5h2s"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1886,13 +1886,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uxjbqr'
+        Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-jk5h2s'
         
-        Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_cb915/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_cb915.dir\\build.make CMakeFiles/cmTC_cb915.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uxjbqr'
-        Building CXX object CMakeFiles/cmTC_cb915.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_1aa52/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1aa52.dir\\build.make CMakeFiles/cmTC_1aa52.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-jk5h2s'
+        Building CXX object CMakeFiles/cmTC_1aa52.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\g++.exe
         Target: x86_64-w64-mingw32
@@ -1900,8 +1900,8 @@ events:
         Thread model: win32
         Supported LTO compression algorithms: zlib
         gcc version 14.2.0 (x86_64-win32-seh-rev2, Built by MinGW-Builds project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cb915.dir\\'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -U_REENTRANT C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_cb915.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccy76p0Q.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1aa52.dir\\'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -U_REENTRANT C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_1aa52.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccsQl7pL.s
         GNU C++17 (x86_64-win32-seh-rev2, Built by MinGW-Builds project) version 14.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 14.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
         
@@ -1924,14 +1924,14 @@ events:
          C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: 05e29e62bd63eaee7876c393579006a3
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cb915.dir\\'
-         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccy76p0Q.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1aa52.dir\\'
+         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccsQl7pL.s
         GNU assembler version 2.44 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.44
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_cb915.exe
-        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_cb915.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_1aa52.exe
+        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_1aa52.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\g++.exe
         COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe
@@ -1942,16 +1942,16 @@ events:
         gcc version 14.2.0 (x86_64-win32-seh-rev2, Built by MinGW-Builds project) 
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cb915.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_cb915.'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccKtE8v9.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_cb915.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_cb915.dir/objects.a --no-whole-archive --out-implib libcmTC_cb915.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1aa52.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_1aa52.'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccCpIeJ2.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_1aa52.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1aa52.dir/objects.a --no-whole-archive --out-implib libcmTC_1aa52.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         collect2 version 14.2.0
-        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccKtE8v9.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_cb915.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_cb915.dir/objects.a --no-whole-archive --out-implib libcmTC_cb915.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccCpIeJ2.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_1aa52.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1aa52.dir/objects.a --no-whole-archive --out-implib libcmTC_1aa52.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         GNU ld (GNU Binutils) 2.44
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cb915.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_cb915.'
-        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_cb915.dir/objects.a
-        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_cb915.dir/objects.a @CMakeFiles\\cmTC_cb915.dir\\objects1.rsp
-        C:\\mingw64\\bin\\g++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_cb915.dir/objects.a -Wl,--no-whole-archive -o cmTC_cb915.exe -Wl,--out-implib,libcmTC_cb915.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uxjbqr'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1aa52.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_1aa52.'
+        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_1aa52.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_1aa52.dir/objects.a @CMakeFiles\\cmTC_1aa52.dir\\objects1.rsp
+        C:\\mingw64\\bin\\g++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_1aa52.dir/objects.a -Wl,--no-whole-archive -o cmTC_1aa52.exe -Wl,--out-implib,libcmTC_1aa52.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-jk5h2s'
         
       exitCode: 0
   -
@@ -1990,13 +1990,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uxjbqr']
+        ignore line: [Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-jk5h2s']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_cb915/fast]
-        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_cb915.dir\\build.make CMakeFiles/cmTC_cb915.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uxjbqr']
-        ignore line: [Building CXX object CMakeFiles/cmTC_cb915.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_1aa52/fast]
+        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_1aa52.dir\\build.make CMakeFiles/cmTC_1aa52.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-jk5h2s']
+        ignore line: [Building CXX object CMakeFiles/cmTC_1aa52.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\g++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2004,8 +2004,8 @@ events:
         ignore line: [Thread model: win32]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.0 (x86_64-win32-seh-rev2  Built by MinGW-Builds project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cb915.dir\\']
-        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -U_REENTRANT C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_cb915.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccy76p0Q.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1aa52.dir\\']
+        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -U_REENTRANT C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_1aa52.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccsQl7pL.s]
         ignore line: [GNU C++17 (x86_64-win32-seh-rev2  Built by MinGW-Builds project) version 14.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
         ignore line: []
@@ -2028,8 +2028,8 @@ events:
         ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 05e29e62bd63eaee7876c393579006a3]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cb915.dir\\']
-        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccy76p0Q.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1aa52.dir\\']
+        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccsQl7pL.s]
         ignore line: [GNU assembler version 2.44 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.44]
         ignore line: [COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/]
         ignore line: [C:/mingw64/bin/../libexec/gcc/]
@@ -2040,9 +2040,9 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_cb915.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_cb915.exe]
-        ignore line: [C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_cb915.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_1aa52.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_1aa52.exe]
+        ignore line: [C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_1aa52.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\g++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe]
@@ -2060,13 +2060,13 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cb915.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_cb915.']
-        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccKtE8v9.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_cb915.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_cb915.dir/objects.a --no-whole-archive --out-implib libcmTC_cb915.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1aa52.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_1aa52.']
+        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccCpIeJ2.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_1aa52.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_1aa52.dir/objects.a --no-whole-archive --out-implib libcmTC_1aa52.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccKtE8v9.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccCpIeJ2.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -2089,7 +2089,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_cb915.exe] ==> ignore
+          arg [cmTC_1aa52.exe] ==> ignore
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o]
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0]
@@ -2100,10 +2100,10 @@ events:
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_cb915.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_1aa52.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_cb915.dll.a] ==> ignore
+          arg [libcmTC_1aa52.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2224,8 +2224,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -2302,8 +2302,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -2382,12 +2382,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ar-14.2.com"
       - "C:/Program Files/nodejs/gcc-ar-14.2.exe"
       - "C:/Program Files/nodejs/gcc-ar-14.2"
-      - "C:/Program Files/Git/cmd/gcc-ar-14.2.com"
-      - "C:/Program Files/Git/cmd/gcc-ar-14.2.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar-14.2"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14.2.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14.2.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14.2"
+      - "D:/Git/cmd/gcc-ar-14.2.com"
+      - "D:/Git/cmd/gcc-ar-14.2.exe"
+      - "D:/Git/cmd/gcc-ar-14.2"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14.2.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14.2.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14.2"
@@ -2505,12 +2505,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ar-14.com"
       - "C:/Program Files/nodejs/gcc-ar-14.exe"
       - "C:/Program Files/nodejs/gcc-ar-14"
-      - "C:/Program Files/Git/cmd/gcc-ar-14.com"
-      - "C:/Program Files/Git/cmd/gcc-ar-14.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar-14"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar-14"
+      - "D:/Git/cmd/gcc-ar-14.com"
+      - "D:/Git/cmd/gcc-ar-14.exe"
+      - "D:/Git/cmd/gcc-ar-14"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar-14"
@@ -2628,12 +2628,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ar14.com"
       - "C:/Program Files/nodejs/gcc-ar14.exe"
       - "C:/Program Files/nodejs/gcc-ar14"
-      - "C:/Program Files/Git/cmd/gcc-ar14.com"
-      - "C:/Program Files/Git/cmd/gcc-ar14.exe"
-      - "C:/Program Files/Git/cmd/gcc-ar14"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar14.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar14.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ar14"
+      - "D:/Git/cmd/gcc-ar14.com"
+      - "D:/Git/cmd/gcc-ar14.exe"
+      - "D:/Git/cmd/gcc-ar14"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar14.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar14.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ar14"
@@ -2720,8 +2720,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -2776,8 +2776,8 @@ events:
       - "C:/Program Files/dotnet/"
       - "D:/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/nodejs/"
-      - "C:/Program Files/Git/cmd/"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/"
+      - "D:/Git/cmd/"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/"
       - "D:/Microsoft VS Code/bin/"
       - "C:/Users/HUSKY/AppData/Roaming/npm/"
@@ -2856,12 +2856,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ranlib-14.2.com"
       - "C:/Program Files/nodejs/gcc-ranlib-14.2.exe"
       - "C:/Program Files/nodejs/gcc-ranlib-14.2"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14.2.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14.2.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14.2"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14.2.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14.2.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14.2"
+      - "D:/Git/cmd/gcc-ranlib-14.2.com"
+      - "D:/Git/cmd/gcc-ranlib-14.2.exe"
+      - "D:/Git/cmd/gcc-ranlib-14.2"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14.2.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14.2.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14.2"
@@ -2979,12 +2979,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ranlib-14.com"
       - "C:/Program Files/nodejs/gcc-ranlib-14.exe"
       - "C:/Program Files/nodejs/gcc-ranlib-14"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib-14"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib-14"
+      - "D:/Git/cmd/gcc-ranlib-14.com"
+      - "D:/Git/cmd/gcc-ranlib-14.exe"
+      - "D:/Git/cmd/gcc-ranlib-14"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-14"
@@ -3102,12 +3102,12 @@ events:
       - "C:/Program Files/nodejs/gcc-ranlib14.com"
       - "C:/Program Files/nodejs/gcc-ranlib14.exe"
       - "C:/Program Files/nodejs/gcc-ranlib14"
-      - "C:/Program Files/Git/cmd/gcc-ranlib14.com"
-      - "C:/Program Files/Git/cmd/gcc-ranlib14.exe"
-      - "C:/Program Files/Git/cmd/gcc-ranlib14"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib14.com"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib14.exe"
       - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/gcc-ranlib14"
+      - "D:/Git/cmd/gcc-ranlib14.com"
+      - "D:/Git/cmd/gcc-ranlib14.exe"
+      - "D:/Git/cmd/gcc-ranlib14"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib14.com"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib14.exe"
       - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps/gcc-ranlib14"
@@ -3194,8 +3194,8 @@ events:
         - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:/mingw64/bin"
         - "C:\\Program Files\\nodejs\\"
-        - "C:/Program Files/Git/cmd"
-        - "C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin"
+        - "C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin"
+        - "D:\\Git\\cmd"
         - "C:/Users/HUSKY/AppData/Local/Microsoft/WindowsApps"
         - "D:\\Microsoft VS Code\\bin"
         - "C:/Users/HUSKY/AppData/Roaming/npm"
@@ -3217,8 +3217,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-3y1evn"
-      binary: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-3y1evn"
+      source: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-64pkal"
+      binary: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-64pkal"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -3227,13 +3227,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-3y1evn'
+        Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-64pkal'
         
-        Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_b8b56/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b8b56.dir\\build.make CMakeFiles/cmTC_b8b56.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-3y1evn'
-        Building C object CMakeFiles/cmTC_b8b56.dir/CMakeCCompilerABI.c.obj
-        C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.obj -c C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c
+        Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_96e0a/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_96e0a.dir\\build.make CMakeFiles/cmTC_96e0a.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-64pkal'
+        Building C object CMakeFiles/cmTC_96e0a.dir/CMakeCCompilerABI.c.obj
+        C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.obj -c C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe
         Target: x86_64-w64-mingw32
@@ -3241,8 +3241,8 @@ events:
         Thread model: win32
         Supported LTO compression algorithms: zlib
         gcc version 14.2.0 (x86_64-win32-seh-rev2, Built by MinGW-Builds project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b8b56.dir\\'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -U_REENTRANT C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_b8b56.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccz7IMyO.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_96e0a.dir\\'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -U_REENTRANT C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_96e0a.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccrRZiYI.s
         GNU C17 (x86_64-win32-seh-rev2, Built by MinGW-Builds project) version 14.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 14.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
         
@@ -3259,14 +3259,14 @@ events:
          C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: 55bf23ff654e1b1e408dac5d5775f4be
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b8b56.dir\\'
-         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.obj C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccz7IMyO.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_96e0a.dir\\'
+         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.obj C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccrRZiYI.s
         GNU assembler version 2.44 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.44
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_b8b56.exe
-        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_b8b56.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_96e0a.exe
+        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_96e0a.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe
@@ -3277,16 +3277,16 @@ events:
         gcc version 14.2.0 (x86_64-win32-seh-rev2, Built by MinGW-Builds project) 
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b8b56.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_b8b56.'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\cc7cs4Eb.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_b8b56.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_b8b56.dir/objects.a --no-whole-archive --out-implib libcmTC_b8b56.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96e0a.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_96e0a.'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccj7Doz0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_96e0a.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_96e0a.dir/objects.a --no-whole-archive --out-implib libcmTC_96e0a.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         collect2 version 14.2.0
-        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\cc7cs4Eb.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_b8b56.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_b8b56.dir/objects.a --no-whole-archive --out-implib libcmTC_b8b56.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
+        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccj7Doz0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_96e0a.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_96e0a.dir/objects.a --no-whole-archive --out-implib libcmTC_96e0a.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o
         GNU ld (GNU Binutils) 2.44
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b8b56.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_b8b56.'
-        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_b8b56.dir/objects.a
-        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_b8b56.dir/objects.a @CMakeFiles\\cmTC_b8b56.dir\\objects1.rsp
-        C:\\mingw64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_b8b56.dir/objects.a -Wl,--no-whole-archive -o cmTC_b8b56.exe -Wl,--out-implib,libcmTC_b8b56.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-3y1evn'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96e0a.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_96e0a.'
+        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_96e0a.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_96e0a.dir/objects.a @CMakeFiles\\cmTC_96e0a.dir\\objects1.rsp
+        C:\\mingw64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_96e0a.dir/objects.a -Wl,--no-whole-archive -o cmTC_96e0a.exe -Wl,--out-implib,libcmTC_96e0a.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-64pkal'
         
       exitCode: 0
   -
@@ -3319,13 +3319,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-3y1evn']
+        ignore line: [Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-64pkal']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_b8b56/fast]
-        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_b8b56.dir\\build.make CMakeFiles/cmTC_b8b56.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-3y1evn']
-        ignore line: [Building C object CMakeFiles/cmTC_b8b56.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.obj -c C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_96e0a/fast]
+        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_96e0a.dir\\build.make CMakeFiles/cmTC_96e0a.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-64pkal']
+        ignore line: [Building C object CMakeFiles/cmTC_96e0a.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.obj -c C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -3333,8 +3333,8 @@ events:
         ignore line: [Thread model: win32]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.2.0 (x86_64-win32-seh-rev2  Built by MinGW-Builds project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b8b56.dir\\']
-        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -U_REENTRANT C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_b8b56.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccz7IMyO.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_96e0a.dir\\']
+        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/ -U_REENTRANT C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_96e0a.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=core2 -march=nocona -version -o C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccrRZiYI.s]
         ignore line: [GNU C17 (x86_64-win32-seh-rev2  Built by MinGW-Builds project) version 14.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
         ignore line: []
@@ -3351,8 +3351,8 @@ events:
         ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 55bf23ff654e1b1e408dac5d5775f4be]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b8b56.dir\\']
-        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.obj C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccz7IMyO.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_96e0a.dir\\']
+        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.obj C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccrRZiYI.s]
         ignore line: [GNU assembler version 2.44 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.44]
         ignore line: [COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/]
         ignore line: [C:/mingw64/bin/../libexec/gcc/]
@@ -3363,9 +3363,9 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_b8b56.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_b8b56.exe]
-        ignore line: [C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_b8b56.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_96e0a.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_96e0a.exe]
+        ignore line: [C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_96e0a.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe]
@@ -3383,13 +3383,13 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b8b56.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_b8b56.']
-        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\cc7cs4Eb.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_b8b56.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_b8b56.dir/objects.a --no-whole-archive --out-implib libcmTC_b8b56.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_96e0a.exe' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_96e0a.']
+        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccj7Doz0.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1420-win32-seh-ucrt-rt_v12-rev2/mingw64 -m i386pep -Bdynamic -o cmTC_96e0a.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_96e0a.dir/objects.a --no-whole-archive --out-implib libcmTC_96e0a.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtend.o]
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\cc7cs4Eb.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\HUSKY\\AppData\\Local\\Temp\\ccj7Doz0.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -3412,7 +3412,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_b8b56.exe] ==> ignore
+          arg [cmTC_96e0a.exe] ==> ignore
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/crtbegin.o]
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0]
@@ -3423,10 +3423,10 @@ events:
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_b8b56.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_96e0a.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_b8b56.dll.a] ==> ignore
+          arg [libcmTC_96e0a.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -3507,8 +3507,8 @@ events:
     checks:
       - "Looking for include file unistd.h"
     directories:
-      source: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-6ss5gw"
-      binary: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-6ss5gw"
+      source: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-eq9vkh"
+      binary: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-eq9vkh"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -3517,19 +3517,19 @@ events:
       variable: "HAVE_UNISTD_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-6ss5gw'
+        Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-eq9vkh'
         
-        Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5a85d/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5a85d.dir\\build.make CMakeFiles/cmTC_5a85d.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-6ss5gw'
-        Building C object CMakeFiles/cmTC_5a85d.dir/HAVE_UNISTD_H.c.obj
-        C:\\mingw64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_5a85d.dir\\HAVE_UNISTD_H.c.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6ss5gw\\HAVE_UNISTD_H.c
-        Linking C executable cmTC_5a85d.exe
-        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_5a85d.dir\\link.txt --verbose=1
-        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_5a85d.dir/objects.a
-        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_5a85d.dir/objects.a @CMakeFiles\\cmTC_5a85d.dir\\objects1.rsp
-        C:\\mingw64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_5a85d.dir/objects.a -Wl,--no-whole-archive -o cmTC_5a85d.exe -Wl,--out-implib,libcmTC_5a85d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_5a85d.dir\\linkLibs.rsp
-        mingw32-make[1]: Leaving directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-6ss5gw'
+        Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_121ee/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_121ee.dir\\build.make CMakeFiles/cmTC_121ee.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-eq9vkh'
+        Building C object CMakeFiles/cmTC_121ee.dir/HAVE_UNISTD_H.c.obj
+        C:\\mingw64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_121ee.dir\\HAVE_UNISTD_H.c.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eq9vkh\\HAVE_UNISTD_H.c
+        Linking C executable cmTC_121ee.exe
+        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_121ee.dir\\link.txt --verbose=1
+        C:\\cmake\\cmake-4.3.1\\cmake-4.3.1-windows-x86_64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_121ee.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_121ee.dir/objects.a @CMakeFiles\\cmTC_121ee.dir\\objects1.rsp
+        C:\\mingw64\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_121ee.dir/objects.a -Wl,--no-whole-archive -o cmTC_121ee.exe -Wl,--out-implib,libcmTC_121ee.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_121ee.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-eq9vkh'
         
       exitCode: 0
   -
@@ -3540,8 +3540,8 @@ events:
     checks:
       - "Looking for include file humdrum.h"
     directories:
-      source: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-a7gd8a"
-      binary: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-a7gd8a"
+      source: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-4xpuw7"
+      binary: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-4xpuw7"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -3550,20 +3550,20 @@ events:
       variable: "HAVE_HUMDRUM_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-a7gd8a'
+        Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-4xpuw7'
         
-        Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_41294/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_41294.dir\\build.make CMakeFiles/cmTC_41294.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-a7gd8a'
-        Building C object CMakeFiles/cmTC_41294.dir/HAVE_HUMDRUM_H.c.obj
-        C:\\mingw64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_41294.dir\\HAVE_HUMDRUM_H.c.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a7gd8a\\HAVE_HUMDRUM_H.c
-        C:\\Users\\HUSKY\\Desktop\\AutoPiano\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a7gd8a\\HAVE_HUMDRUM_H.c:2:10: fatal error: humdrum.h: No such file or directory
+        Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_666cd/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_666cd.dir\\build.make CMakeFiles/cmTC_666cd.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-4xpuw7'
+        Building C object CMakeFiles/cmTC_666cd.dir/HAVE_HUMDRUM_H.c.obj
+        C:\\mingw64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_666cd.dir\\HAVE_HUMDRUM_H.c.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4xpuw7\\HAVE_HUMDRUM_H.c
+        C:\\Users\\HUSKY\\Desktop\\AutoPiano\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4xpuw7\\HAVE_HUMDRUM_H.c:2:10: fatal error: humdrum.h: No such file or directory
             2 | #include <humdrum.h>
               |          ^~~~~~~~~~~
         compilation terminated.
-        mingw32-make[1]: *** [CMakeFiles\\cmTC_41294.dir\\build.make:80: CMakeFiles/cmTC_41294.dir/HAVE_HUMDRUM_H.c.obj] Error 1
-        mingw32-make[1]: Leaving directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-a7gd8a'
-        mingw32-make: *** [Makefile:133: cmTC_41294/fast] Error 2
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_666cd.dir\\build.make:80: CMakeFiles/cmTC_666cd.dir/HAVE_HUMDRUM_H.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-4xpuw7'
+        mingw32-make: *** [Makefile:133: cmTC_666cd/fast] Error 2
         
       exitCode: 2
   -
@@ -3574,8 +3574,8 @@ events:
     checks:
       - "Looking for include file sys/io.h"
     directories:
-      source: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-iz9hfb"
-      binary: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-iz9hfb"
+      source: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uz4yo1"
+      binary: "C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uz4yo1"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -3584,20 +3584,20 @@ events:
       variable: "HAVE_SYS_IO_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-iz9hfb'
+        Change Dir: 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uz4yo1'
         
-        Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_a10a9/fast
-        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_a10a9.dir\\build.make CMakeFiles/cmTC_a10a9.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-iz9hfb'
-        Building C object CMakeFiles/cmTC_a10a9.dir/HAVE_SYS_IO_H.c.obj
-        C:\\mingw64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_a10a9.dir\\HAVE_SYS_IO_H.c.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iz9hfb\\HAVE_SYS_IO_H.c
-        C:\\Users\\HUSKY\\Desktop\\AutoPiano\\build\\CMakeFiles\\CMakeScratch\\TryCompile-iz9hfb\\HAVE_SYS_IO_H.c:2:10: fatal error: sys/io.h: No such file or directory
+        Run Build Command(s): C:/cmake/cmake-4.3.1/cmake-4.3.1-windows-x86_64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_7921a/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7921a.dir\\build.make CMakeFiles/cmTC_7921a.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uz4yo1'
+        Building C object CMakeFiles/cmTC_7921a.dir/HAVE_SYS_IO_H.c.obj
+        C:\\mingw64\\bin\\gcc.exe    -o CMakeFiles\\cmTC_7921a.dir\\HAVE_SYS_IO_H.c.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uz4yo1\\HAVE_SYS_IO_H.c
+        C:\\Users\\HUSKY\\Desktop\\AutoPiano\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uz4yo1\\HAVE_SYS_IO_H.c:2:10: fatal error: sys/io.h: No such file or directory
             2 | #include <sys/io.h>
               |          ^~~~~~~~~~
         compilation terminated.
-        mingw32-make[1]: *** [CMakeFiles\\cmTC_a10a9.dir\\build.make:80: CMakeFiles/cmTC_a10a9.dir/HAVE_SYS_IO_H.c.obj] Error 1
-        mingw32-make[1]: Leaving directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-iz9hfb'
-        mingw32-make: *** [Makefile:133: cmTC_a10a9/fast] Error 2
+        mingw32-make[1]: *** [CMakeFiles\\cmTC_7921a.dir\\build.make:80: CMakeFiles/cmTC_7921a.dir/HAVE_SYS_IO_H.c.obj] Error 1
+        mingw32-make[1]: Leaving directory 'C:/Users/HUSKY/Desktop/AutoPiano/build/CMakeFiles/CMakeScratch/TryCompile-uz4yo1'
+        mingw32-make: *** [Makefile:133: cmTC_7921a/fast] Error 2
         
       exitCode: 2
 ...

@@ -297,21 +297,21 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "AutoPiano_App::@5f5a17c01335469806cb",
-					"jsonFile" : "target-AutoPiano_App-Debug-3366f083af5d4f0279c7.json",
+					"jsonFile" : "target-AutoPiano_App-Debug-805c7d1bf170964edd0c.json",
 					"name" : "AutoPiano_App",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "CoreLib::@57760688d1f824db5d9c",
-					"jsonFile" : "target-CoreLib-Debug-f379b8fdf6d28b0f77a3.json",
+					"jsonFile" : "target-CoreLib-Debug-30678f56a0e6757fe887.json",
 					"name" : "CoreLib",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 6,
 					"id" : "GuiLib::@80e94ed2326635f41824",
-					"jsonFile" : "target-GuiLib-Debug-a7cb60f975d68119c95b.json",
+					"jsonFile" : "target-GuiLib-Debug-222c10dcd7df7ea18b1d.json",
 					"name" : "GuiLib",
 					"projectIndex" : 3
 				},

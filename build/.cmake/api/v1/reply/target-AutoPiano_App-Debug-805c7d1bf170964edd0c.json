@@ -216,6 +216,11 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 3,
+				"fragment" : "C:\\Users\\HUSKY\\Desktop\\AutoPiano\\lib\\libCoreLib.a",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 5,
 				"fragment" : "-lwinmm",
 				"role" : "libraries"

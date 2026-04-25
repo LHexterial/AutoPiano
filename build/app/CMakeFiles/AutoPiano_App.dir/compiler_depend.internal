@@ -3,9 +3,7 @@
 
 app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj
  C:/Users/HUSKY/Desktop/AutoPiano/app/main.cpp
- C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/midi_parser.h
- C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/player.h
- C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/types.h
+ C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/AutoPianoEngine.h
  C:/Users/HUSKY/Desktop/AutoPiano/modules/gui/include/ui_manager.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ammintrin.h

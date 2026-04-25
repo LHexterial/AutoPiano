@@ -1,17 +1,8 @@
 #pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
 #include "ui_manager.h"
-#include "core/player.h"
-#include "core/midi_parser.h"
-#include <thread>
-#include <atomic>
+#include "core/AutoPianoEngine.h" // 🌟 引入核心引擎
 #include <windows.h>
 #include <iostream>
-
-// 全局原子变量
-static std::atomic<bool> isPaused{false};
-static std::atomic<bool> isPlaying{ false };
-static std::atomic<float> currentProgress{ 0.0f };
-static std::thread playThread;
 
 std::string LoadTargetTitleFromConfig() {
     char result[] = {0};
@@ -26,112 +17,54 @@ std::string LoadTargetTitleFromConfig() {
     return std::string(result);
 }
 
-struct TimePeriodGuard {
-    explicit TimePeriodGuard(UINT period) { timeBeginPeriod(period); }
-    ~TimePeriodGuard() { timeEndPeriod(1); }
-};
-// ==================== UTF-8 转 ANSI（用于旧式文件 API） ====================
-// 解决 ImGui 的 UTF-8 编码与 Windows 底层 C++ 读取中文路径冲突的问题
-std::string UTF8ToANSI(const std::string& utf8Str) {
-    if (utf8Str.empty()) return "";
-    
-    // 1. UTF-8 转宽字符 (UTF-16)
-    int wideSize = MultiByteToWideChar(CP_UTF8, 0, utf8Str.c_str(), -1, NULL, 0);
-    if (wideSize <= 0) return "";
-    std::wstring wideStr(wideSize, 0);
-    MultiByteToWideChar(CP_UTF8, 0, utf8Str.c_str(), -1, wideStr.data(), wideSize);
-    
-    // 2. 宽字符转 ANSI (GBK 等本地编码)
-    int ansiSize = WideCharToMultiByte(CP_ACP, 0, wideStr.c_str(), -1, NULL, 0, NULL, NULL);
-    if (ansiSize <= 0) return "";
-    std::string ansiStr(ansiSize, 0);
-    WideCharToMultiByte(CP_ACP, 0, wideStr.c_str(), -1, ansiStr.data(), ansiSize, NULL, NULL);
-    
-    // 移除末尾多余的 '\0' 终止符
-    ansiStr.resize(ansiSize - 1);
-    return ansiStr;
-}
-
-// 子线程包装函数
-void PlayThreadWrapper(std::string path, float speed, float prep, std::string targetTitle) {
-    try {
-        TimePeriodGuard timerGuard(1);
-        auto actions = decodeMidi(UTF8ToANSI(path), 0.0);
-        if (actions.empty()) throw std::runtime_error("解析失败");
-
-        play(actions, speed, prep, isPlaying, isPaused,currentProgress, targetTitle);
-
-    } catch (const std::exception& e) {
-        MessageBoxA(nullptr, e.what(), "错误", MB_OK | MB_ICONERROR);
-    }
-    isPlaying = false;
-    currentProgress = 0.0f;
-}
 int main() {
+    // 系统级初始化
     std::string targetTitle = LoadTargetTitleFromConfig();
     HWND consoleWnd = GetConsoleWindow();
     if (consoleWnd) {
         ShowWindow(consoleWnd, SW_HIDE);
     }
+    
+    // 初始化 COM 环境 (用于文件选择对话框)
     CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
 
-    if (!GUI::Initialize("AutoPiano v2.0", 100, 100)) {
+    // 初始化 GUI 窗口
+    if (!GUI::Initialize("AutoPiano v3.0 - MVC架构版", 100, 100)) {
         return 1;
     }
 
-    float speed = 1.0f;
-    float prep = 3.0f;
-    std::string midiPath = "未加载曲谱";
+    // ==========================================
+    // 🌟 2. 实例化核心引擎 (大脑)
+    // ==========================================
+    // 这一行代码就替代了原来 main 里所有的原子变量和线程定义
+    AutoPianoEngine engine;
+    engine.SetTargetWindow(targetTitle); 
+    
     bool uiKeepAlive = true;
-    bool wasF9Pressed = false;
+
+    // ==========================================
+    // 🌟 3. 极致清爽的主循环
+    // ==========================================
     while (!GUI::ShouldClose() && uiKeepAlive) {
         GUI::NewFrame();
-        bool isF9Pressed = (GetAsyncKeyState(VK_F9) & 0x8000) != 0;
-        if (isPlaying.load() && isF9Pressed && !wasF9Pressed)
-        {
-            isPaused = !isPaused;
-        }
-        wasF9Pressed = isF9Pressed;
 
-        bool uiPlaying = isPlaying.load();
-        bool uiPaused = isPaused.load();
-        float uiProgress = currentProgress.load();
+        // A. 每一帧让大脑处理逻辑
+        // 内部包含：F9/F10监听、线程收尸、自动下一首、状态更新
+        engine.UpdateLogic();
 
-        GUI::UpdateUI(speed, prep, midiPath, uiPlaying, uiPaused,uiProgress, uiKeepAlive, targetTitle);
-
-        if (uiPaused != isPaused.load())
-        {
-            isPaused.store(uiPaused);
-        }
-        // 状态机切换逻辑
-        
-        if (uiPlaying != isPlaying.load())
-        {
-            isPlaying.store(uiPlaying);// 及时更新状态
-            if (uiPlaying)
-            {
-                isPaused.store(false);
-                if (playThread.joinable())
-                    playThread.join();
-                playThread = std::thread(PlayThreadWrapper, midiPath, speed, prep, targetTitle);
-            }
-            else
-            {
-                if (playThread.joinable())
-                {
-                    playThread.join();
-                }
-            }
-        }
-
+        // B. 把大脑的引用传给 UI 界面进行绘制
+        // UI 会自动通过 engine 的接口读取进度、播放状态，并调用控制函数
+        GUI::UpdateUI(&engine, uiKeepAlive);
 
         GUI::Render();
     }
 
-    // 优雅退出
-    isPlaying = false;
-    if (playThread.joinable()) playThread.join();
-
+    // ==========================================
+    // 4. 优雅退出
+    // ==========================================
+    // 当 main 函数结束时，engine 对象会被销毁
+    // 它的析构函数会自动执行 Stop() 和 join()，保证程序关闭时不会崩溃
+    
     GUI::Shutdown();
     CoUninitialize();
     return 0;

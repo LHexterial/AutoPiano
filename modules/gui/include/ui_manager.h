@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include <vector>
+class AutoPianoEngine;
 
 namespace GUI {
     // 初始化窗口、DirectX 11 和 ImGui (已包含 DPI 缩放处理)
@@ -12,7 +14,7 @@ namespace GUI {
     void NewFrame();
     
     // 绘制 AutoPiano 专属控制台
-    void UpdateUI(float& speed, float& prep, std::string& midiPath, bool& isPlaying, bool& isPaused, float progress, bool& keepAlive, std::string& targetTitle);
+    void UpdateUI(AutoPianoEngine* engine, bool &keepAlive);
     
     // 渲染输出到屏幕
     void Render();

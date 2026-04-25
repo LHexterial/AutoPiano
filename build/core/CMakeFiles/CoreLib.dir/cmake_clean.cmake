@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "C:/Users/HUSKY/Desktop/AutoPiano/lib/libCoreLib.a"
   "C:/Users/HUSKY/Desktop/AutoPiano/lib/libCoreLib.pdb"
+  "CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj"
+  "CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj.d"
   "CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj"
   "CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj.d"
   "CMakeFiles/CoreLib.dir/src/player.cpp.obj"

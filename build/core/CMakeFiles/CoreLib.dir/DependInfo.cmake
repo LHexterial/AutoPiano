@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/HUSKY/Desktop/AutoPiano/core/src/AutoPianoEngine.cpp" "core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj" "gcc" "core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj.d"
   "C:/Users/HUSKY/Desktop/AutoPiano/core/src/midi_parser.cpp" "core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj" "gcc" "core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj.d"
   "C:/Users/HUSKY/Desktop/AutoPiano/core/src/player.cpp" "core/CMakeFiles/CoreLib.dir/src/player.cpp.obj" "gcc" "core/CMakeFiles/CoreLib.dir/src/player.cpp.obj.d"
   )

@@ -391,6 +391,12 @@
 },
 {
   "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/core",
+  "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/CoreLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CoreLib.dir\\src\\AutoPianoEngine.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\core\\src\\AutoPianoEngine.cpp",
+  "file": "C:/Users/HUSKY/Desktop/AutoPiano/core/src/AutoPianoEngine.cpp",
+  "output": "core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj"
+},
+{
+  "directory": "C:/Users/HUSKY/Desktop/AutoPiano/build/core",
   "command": "C:\\mingw64\\bin\\g++.exe -DPROJECT_NAME=\\\"AutoPiano\\\" -DPROJECT_VERSION=\\\"2.0.0\\\" @CMakeFiles/CoreLib.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CoreLib.dir\\src\\midi_parser.cpp.obj -c C:\\Users\\HUSKY\\Desktop\\AutoPiano\\core\\src\\midi_parser.cpp",
   "file": "C:/Users/HUSKY/Desktop/AutoPiano/core/src/midi_parser.cpp",
   "output": "core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj"

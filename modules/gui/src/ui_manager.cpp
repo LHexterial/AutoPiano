@@ -6,6 +6,7 @@
 #include <tchar.h>
 #include <windows.h>
 #include <commdlg.h> // 用于文件选择弹窗
+#include "core/AutoPianoEngine.h"
 
 // imgui官方示例文件内的辅助函数声明
 bool CreateDeviceD3D(HWND hWnd);
@@ -223,77 +224,150 @@ namespace GUI {
     }
     
     // 绘制 AutoPiano 专属控制台
-    void UpdateUI(float &speed, float &prep, std::string &midiPath, bool &isPlaying, bool& isPaused, float progress, bool &keepAlive, std::string& targetTitle)
+    
+    // 绘制 AutoPiano 专属控制台
+    void UpdateUI(AutoPianoEngine* engine, bool &keepAlive)
     {
- //       ImGui::DockSpaceOverViewport();
-        ImGui::SetNextWindowSize(ImVec2(550, 450), ImGuiCond_FirstUseEver);
+        ImGui::SetNextWindowSize(ImVec2(550, 500), ImGuiCond_FirstUseEver);
 
-        if (!ImGui::Begin("AutoPiano v2.0 by 别净吃饭啊", &keepAlive, ImGuiWindowFlags_NoCollapse)) {
-        ImGui::End();
-        return;
-    }
-
-        if (!targetTitle.empty()) {
-            ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "[焦点锁定] 已绑定目标: %s", targetTitle.c_str());
-        } else {
-            ImGui::TextColored(ImVec4(1.0f, 0.8f, 0.0f, 1.0f), "[全局模式] 未绑定窗口，全局发送按键");
+        if (!ImGui::Begin("AutoPiano v3.0 by 别净吃饭啊", &keepAlive, ImGuiWindowFlags_NoCollapse)) {
+            ImGui::End();
+            return;
         }
+
+        // ==========================================
+        // 1. 从大脑中获取当前状态
+        // ==========================================
+        bool isPlaying = engine->IsPlaying();
+        bool isPaused = engine->IsPaused();
+        float progress = engine->GetProgress();
+
+        // 顶部状态提示
+        ImGui::Text("状态: %s", isPlaying ? (isPaused ? "已暂停" : "正在演奏中...") : "等待指令");
         ImGui::Separator();
         ImGui::Spacing();
 
-        ImGui::Text("状态: %s", isPlaying ? "正在演奏中..." : "等待指令");
-        ImGui::Separator();
-
-        ImGui::BeginDisabled(isPlaying);
-        ImGui::Text("曲谱路径: %s", midiPath.c_str());
-        if (ImGui::Button("选择曲谱", ImVec2(0, 0))) {
-            std::string selected = OpenFileDialog();
-            if (!selected.empty()) midiPath = selected;
-        }
-        ImGui::SliderFloat("演奏速度", &speed, 0.1f, 3.0f, "%.2f x");
-        ImGui::SliderFloat("准备时间", &prep, 0.0f, 10.0f, "%.1f 秒");
+        // ==========================================
+        // 2. 参数设置 (直接绑定到大脑的指针)
+        // ==========================================
+        ImGui::BeginDisabled(isPlaying); // 播放时禁止修改参数
+        ImGui::SliderFloat("演奏速度", engine->GetSpeedPtr(), 0.1f, 3.0f, "%.2f x");
+        ImGui::SliderFloat("准备时间", engine->GetPrepPtr(), 0.0f, 10.0f, "%.1f 秒");
         ImGui::EndDisabled();
 
         ImGui::Spacing();
-        if (isPlaying) {
-            if (isPaused)
-            {
-                ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.7f, 0.2f, 1.0f)); // 绿色
-                if (ImGui::Button("继续演奏(F9)",ImVec2(ImGui::GetContentRegionAvail().x / 2 - 5, 50)))
-                {
-                    isPaused = false;
+
+        // ==========================================
+        // 3. 播放列表管理
+        // ==========================================
+        ImGui::Text("播放队列");
+        const auto& playlist = engine->GetPlaylist();
+        size_t playingIdx = engine->GetCurrentTrackIdx(); // 引擎正在播放的索引
+
+        // UI 专属的选中记忆（static 保证每一帧都会记住上次选的值）
+        static size_t uiSelectedIdx = 0; 
+        
+        // 越界保护：如果列表清空了，游标归零
+        if (uiSelectedIdx >= playlist.size() && !playlist.empty()) {
+            uiSelectedIdx = playlist.size() - 1;
+        }
+
+        // 绘制列表框
+        if (ImGui::BeginListBox("##Playlist", ImVec2(-1, 200))) {
+            for (size_t n = 0; n < playlist.size(); n++) {
+                ImGui::PushID(static_cast<int>(n));
+                ImVec4 TextCol = ImVec4(1.00f, 1.00f, 1.00f, 1.00f); // 默认是白色
+                const bool is_selected = (uiSelectedIdx == n); // 判断是否被鼠标选中
+                
+                std::string fileName = playlist[n].substr(playlist[n].find_last_of("/\\") + 1);
+                size_t dotPos = fileName.find_last_of('.');
+
+                if (dotPos != std::string::npos) {
+             // 从第 0 位开始，切下 dotPos 个字符
+                    fileName = fileName.substr(0, dotPos); 
                 }
-            }
-            else
-            {
-                ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.9f, 0.5f, 0.1f, 1.0f)); // 橙色
-                if (ImGui::Button("暂停演奏 (F9)", ImVec2(ImGui::GetContentRegionAvail().x / 2 - 5, 50)))
+                
+                if (n == playingIdx && isPlaying && !isPaused)
                 {
-                    isPaused = true;
+                    fileName = "[Playing] " + fileName;
+                    TextCol = ImVec4(1.00f, 0.65f, 0.00f, 1.00f);// 橙色
+                }
+                else if (n == playingIdx && isPlaying && isPaused)
+                {
+                    fileName = "[Paused] " + fileName;
+                    TextCol = ImVec4(1.00f, 0.00f, 0.00f, 1.00f);//红色
+                }
+                else if (is_selected)
+                {
+                    fileName = "[Selected] " + fileName;
+                    TextCol = ImVec4(1.00f, 0.84f, 0.00f, 1.00f);//金色
+                }
+                ImGui::PushStyleColor(ImGuiCol_Text, TextCol);
+                if (ImGui::Selectable(fileName.c_str(), is_selected)) {// 这里传入指针，但是不是用指针来区分的，是用字符字面常量来区分
+                    uiSelectedIdx = n; // 鼠标点击时，更新 UI 选中游标
+                }
+
+                // 保持选中项在视野内
+                if (is_selected) ImGui::SetItemDefaultFocus();
+                ImGui::PopStyleColor();
+                ImGui::PopID();
+            }
+            ImGui::EndListBox();
+        }
+
+        // 列表操作按钮
+        //ImGui::BeginDisabled(isPlaying); 
+        if (ImGui::Button("添加")) {
+            std::string picked = OpenFileDialog();
+            if (!picked.empty()) engine->AddTrack(picked);
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("移除") && !playlist.empty()) {
+            engine->RemoveTrack(uiSelectedIdx); // 传入的是鼠标选中的索引
+        }
+        ImGui::SameLine();
+        if (ImGui::Button("清空")) {
+            engine->ClearPlaylist();
+            uiSelectedIdx = 0;
+        }
+        //ImGui::EndDisabled();
+
+        ImGui::Spacing();
+        ImGui::Separator();
+
+        // ==========================================
+        // 4. 核心控制按钮
+        // ==========================================
+        if (isPlaying) {
+            if (isPaused) {
+                ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.7f, 0.2f, 1.0f));
+                if (ImGui::Button("继续演奏 (F9)", ImVec2(ImGui::GetContentRegionAvail().x / 2 - 5, 50))) {
+                    engine->TogglePause(); // 直接让大脑暂停/继续
+                }
+            } else {
+                ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.9f, 0.5f, 0.1f, 1.0f));
+                if (ImGui::Button("暂停演奏 (F9)", ImVec2(ImGui::GetContentRegionAvail().x / 2 - 5, 50))) {
+                    engine->TogglePause();
                 }
             }
             ImGui::PopStyleColor();
             ImGui::SameLine();
 
             ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.8f, 0.2f, 0.2f, 1.0f));
-            if (ImGui::Button("停止播放 (F10)", ImVec2(-1, 50)))
-            {
-                isPlaying = false;
-                isPaused = false;
+            if (ImGui::Button("停止 (F10)", ImVec2(-1, 50))) {
+                engine->Stop(); // 直接下达停止
             }
             ImGui::PopStyleColor();
         } else {
             ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.7f, 0.2f, 1.0f));
-            if (ImGui::Button("开始演奏(start)", ImVec2(-1, 50))) {
-                if (!midiPath.empty() && midiPath != "未加载曲谱")
-                {
-                    isPlaying = true;
-                    isPaused = false;
-                }
+            if (ImGui::Button("开始演奏", ImVec2(-1, 50))) {
+                engine->SetCurrentTrackIdx(uiSelectedIdx); // 播放前，把引擎的进度调到用户选中的那首歌
+                engine->StartPlaylist(); 
             }
             ImGui::PopStyleColor();
         }
 
+        // 5. 进度条
         ImGui::ProgressBar(progress, ImVec2(-1, 0));
         ImGui::End();
     }

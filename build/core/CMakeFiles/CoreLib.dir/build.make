@@ -71,11 +71,26 @@ include core/CMakeFiles/CoreLib.dir/flags.make
 core/CMakeFiles/CoreLib.dir/codegen:
 .PHONY : core/CMakeFiles/CoreLib.dir/codegen
 
+core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj: core/CMakeFiles/CoreLib.dir/flags.make
+core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj: core/CMakeFiles/CoreLib.dir/includes_CXX.rsp
+core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj: C:/Users/HUSKY/Desktop/AutoPiano/core/src/AutoPianoEngine.cpp
+core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj: core/CMakeFiles/CoreLib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj"
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build\core && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj -MF CMakeFiles\CoreLib.dir\src\AutoPianoEngine.cpp.obj.d -o CMakeFiles\CoreLib.dir\src\AutoPianoEngine.cpp.obj -c C:\Users\HUSKY\Desktop\AutoPiano\core\src\AutoPianoEngine.cpp
+
+core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.i"
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build\core && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HUSKY\Desktop\AutoPiano\core\src\AutoPianoEngine.cpp > CMakeFiles\CoreLib.dir\src\AutoPianoEngine.cpp.i
+
+core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.s"
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build\core && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HUSKY\Desktop\AutoPiano\core\src\AutoPianoEngine.cpp -o CMakeFiles\CoreLib.dir\src\AutoPianoEngine.cpp.s
+
 core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj: core/CMakeFiles/CoreLib.dir/flags.make
 core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj: core/CMakeFiles/CoreLib.dir/includes_CXX.rsp
 core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj: C:/Users/HUSKY/Desktop/AutoPiano/core/src/midi_parser.cpp
 core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj: core/CMakeFiles/CoreLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj"
 	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build\core && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj -MF CMakeFiles\CoreLib.dir\src\midi_parser.cpp.obj.d -o CMakeFiles\CoreLib.dir\src\midi_parser.cpp.obj -c C:\Users\HUSKY\Desktop\AutoPiano\core\src\midi_parser.cpp
 
 core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.i: cmake_force
@@ -90,7 +105,7 @@ core/CMakeFiles/CoreLib.dir/src/player.cpp.obj: core/CMakeFiles/CoreLib.dir/flag
 core/CMakeFiles/CoreLib.dir/src/player.cpp.obj: core/CMakeFiles/CoreLib.dir/includes_CXX.rsp
 core/CMakeFiles/CoreLib.dir/src/player.cpp.obj: C:/Users/HUSKY/Desktop/AutoPiano/core/src/player.cpp
 core/CMakeFiles/CoreLib.dir/src/player.cpp.obj: core/CMakeFiles/CoreLib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object core/CMakeFiles/CoreLib.dir/src/player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object core/CMakeFiles/CoreLib.dir/src/player.cpp.obj"
 	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build\core && C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT core/CMakeFiles/CoreLib.dir/src/player.cpp.obj -MF CMakeFiles\CoreLib.dir\src\player.cpp.obj.d -o CMakeFiles\CoreLib.dir\src\player.cpp.obj -c C:\Users\HUSKY\Desktop\AutoPiano\core\src\player.cpp
 
 core/CMakeFiles/CoreLib.dir/src/player.cpp.i: cmake_force
@@ -103,17 +118,19 @@ core/CMakeFiles/CoreLib.dir/src/player.cpp.s: cmake_force
 
 # Object files for target CoreLib
 CoreLib_OBJECTS = \
+"CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj" \
 "CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj" \
 "CMakeFiles/CoreLib.dir/src/player.cpp.obj"
 
 # External object files for target CoreLib
 CoreLib_EXTERNAL_OBJECTS =
 
+C:/Users/HUSKY/Desktop/AutoPiano/lib/libCoreLib.a: core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj
 C:/Users/HUSKY/Desktop/AutoPiano/lib/libCoreLib.a: core/CMakeFiles/CoreLib.dir/src/midi_parser.cpp.obj
 C:/Users/HUSKY/Desktop/AutoPiano/lib/libCoreLib.a: core/CMakeFiles/CoreLib.dir/src/player.cpp.obj
 C:/Users/HUSKY/Desktop/AutoPiano/lib/libCoreLib.a: core/CMakeFiles/CoreLib.dir/build.make
 C:/Users/HUSKY/Desktop/AutoPiano/lib/libCoreLib.a: core/CMakeFiles/CoreLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library C:\Users\HUSKY\Desktop\AutoPiano\lib\libCoreLib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HUSKY\Desktop\AutoPiano\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library C:\Users\HUSKY\Desktop\AutoPiano\lib\libCoreLib.a"
 	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build\core && $(CMAKE_COMMAND) -P CMakeFiles\CoreLib.dir\cmake_clean_target.cmake
 	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build\core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CoreLib.dir\link.txt --verbose=$(VERBOSE)
 

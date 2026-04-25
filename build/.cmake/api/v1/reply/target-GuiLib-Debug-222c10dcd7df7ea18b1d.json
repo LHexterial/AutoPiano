@@ -65,6 +65,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "ImGuiLib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "CoreLib::@57760688d1f824db5d9c"
 		}
 	],
 	"compileGroups" : 
@@ -100,6 +104,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "C:/Users/HUSKY/Desktop/AutoPiano/third_party/imgui/backends"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/HUSKY/Desktop/AutoPiano/core/include"
 				}
 			],
 			"language" : "CXX",
@@ -122,6 +130,14 @@
 		{
 			"backtrace" : 2,
 			"id" : "ImGuiLib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "midifile::@4ce4faf128111e5deef5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "CoreLib::@57760688d1f824db5d9c"
 		}
 	],
 	"id" : "GuiLib::@80e94ed2326635f41824",
@@ -130,6 +146,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "ImGuiLib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "CoreLib::@57760688d1f824db5d9c"
 		},
 		{
 			"backtrace" : 2,
@@ -153,6 +173,10 @@
 		{
 			"backtrace" : 2,
 			"id" : "ImGuiLib::@037116246cbfaaeb5504"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "CoreLib::@57760688d1f824db5d9c"
 		},
 		{
 			"backtrace" : 2,

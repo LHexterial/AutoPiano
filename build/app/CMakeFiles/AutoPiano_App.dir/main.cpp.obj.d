@@ -100,19 +100,17 @@ app/CMakeFiles/AutoPiano_App.dir/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/uses_allocator.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/uses_allocator_args.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/tuple \
- C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/player.h \
- C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/types.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/vector \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_uninitialized.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_vector.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/stl_bvector.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/vector.tcc \
+ C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/AutoPianoEngine.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/atomic \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/atomic_base.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/atomic_lockfree_defines.h \
- C:/Users/HUSKY/Desktop/AutoPiano/core/include/core/midi_parser.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/thread \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/std_thread.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/unique_ptr.h \

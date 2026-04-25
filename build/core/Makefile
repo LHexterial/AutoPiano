@@ -174,6 +174,30 @@ CoreLib/fast:
 	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\CoreLib.dir\build.make core/CMakeFiles/CoreLib.dir/build
 .PHONY : CoreLib/fast
 
+src/AutoPianoEngine.obj: src/AutoPianoEngine.cpp.obj
+.PHONY : src/AutoPianoEngine.obj
+
+# target to build an object file
+src/AutoPianoEngine.cpp.obj:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\CoreLib.dir\build.make core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.obj
+.PHONY : src/AutoPianoEngine.cpp.obj
+
+src/AutoPianoEngine.i: src/AutoPianoEngine.cpp.i
+.PHONY : src/AutoPianoEngine.i
+
+# target to preprocess a source file
+src/AutoPianoEngine.cpp.i:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\CoreLib.dir\build.make core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.i
+.PHONY : src/AutoPianoEngine.cpp.i
+
+src/AutoPianoEngine.s: src/AutoPianoEngine.cpp.s
+.PHONY : src/AutoPianoEngine.s
+
+# target to generate assembly for a file
+src/AutoPianoEngine.cpp.s:
+	cd /d C:\Users\HUSKY\Desktop\AutoPiano\build && $(MAKE) $(MAKESILENT) -f core\CMakeFiles\CoreLib.dir\build.make core/CMakeFiles/CoreLib.dir/src/AutoPianoEngine.cpp.s
+.PHONY : src/AutoPianoEngine.cpp.s
+
 src/midi_parser.obj: src/midi_parser.cpp.obj
 .PHONY : src/midi_parser.obj
 
@@ -235,6 +259,9 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... CoreLib
+	@echo ... src/AutoPianoEngine.obj
+	@echo ... src/AutoPianoEngine.i
+	@echo ... src/AutoPianoEngine.s
 	@echo ... src/midi_parser.obj
 	@echo ... src/midi_parser.i
 	@echo ... src/midi_parser.s
